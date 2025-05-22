@@ -1,17 +1,13 @@
 #pragma once
 #include "Window.h"
 #include "../renderer/IRenderer.h"
-
-enum class RendererAPI {
-    Vulkan,
-    OpenGL
-};
+#include "../renderer/RendererAPI.h"
 
 class Application {
 public:
     Application(RendererAPI api);
     ~Application();
-    void Run(); //Entry point (main.coo) calls this
+    void Run(); //Entry point (main.cpp) calls this
 private:
     void Init();
     void Shutdown();

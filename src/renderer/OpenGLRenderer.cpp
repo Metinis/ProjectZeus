@@ -1,20 +1,20 @@
 #include "OpenGLRenderer.h"
-void OpenGLRenderer::Init() override {
+void OpenGLRenderer::Init() {
 
 }
 
-void OpenGLRenderer::Cleanup() override {
+void OpenGLRenderer::Cleanup() {
 
 }
 
-void OpenGLRenderer::BeginFrame() override {
+void OpenGLRenderer::BeginFrame() {
 
 }
 
-void OpenGLRenderer::EndFrame() override {
+void OpenGLRenderer::EndFrame() {
 
 }
 
-void OpenGLRenderer::DrawMesh() override {
+void OpenGLRenderer::DrawMesh() {
 
 }

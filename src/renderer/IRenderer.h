@@ -1,5 +1,6 @@
 #pragma once
-#include "../core/Application.h"
+
+enum class RendererAPI;
 
 class IRenderer {
 public:
