@@ -11,6 +11,7 @@ public:
     float GetDeltaTime() const;
     bool ShouldClose();
     void SwapBuffers();
+    GLFWwindow* GetNativeWindow() const;
 
 private:
     void Init();

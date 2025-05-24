@@ -1,5 +1,6 @@
 #pragma once
 #include "Window.h"
+#include "../imgui/ImGUILayer.h"
 #include "../renderer/IRenderer.h"
 #include "../renderer/RendererAPI.h"
 
@@ -18,6 +19,7 @@ private:
 
     RendererAPI m_API;
     IRenderer* m_Renderer = nullptr;
+    ImGUILayer* m_ImGuiLayer = nullptr;
     Window* m_Window = nullptr;
     bool m_Running = false;
 };

@@ -1,5 +1,7 @@
 #include "Window.h"
 
+#include <glad/glad.h>
+
 Window::Window(int width, int height, const std::string& title, bool useVulkan)
     : m_Width(width), m_Height(height), m_Title(title), m_UseVulkan(useVulkan)
 {
@@ -22,7 +24,7 @@ void Window::Init() {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 #ifdef __APPLE__
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, true); // Required on macOS
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Required on macOS
 #else
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
 #endif
@@ -52,13 +54,14 @@ void Window::CalculateDeltaTime() {
 float Window::GetDeltaTime() const {
     return m_DeltaTime;
 }
+GLFWwindow* Window::GetNativeWindow() const {
+    return m_Window;
+}
 bool Window::ShouldClose() {
     return glfwWindowShouldClose(m_Window);
 }
 void Window::SwapBuffers() {
-    if(!m_UseVulkan) {
-        glfwSwapBuffers(m_Window);
-    }
+    glfwSwapBuffers(m_Window);
 }
 
 
