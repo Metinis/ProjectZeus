@@ -1,0 +1,9 @@
+[submodule "ZeusEngineCore"]
+	path = ZeusEngineCore
+	url = https://github.com/Metinis/ZeusEngineCore.git
+[submodule "ZeusEngine"]
+	path = ZeusEngine
+	url = https://github.com/Metinis/ZeusEngine.git
+[submodule "ZeusEditor"]
+	path = ZeusEditor
+	url = https://github.com/Metinis/ZeusEditor.git
