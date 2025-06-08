@@ -1,15 +1,57 @@
-CMakeLists.txt.user
+# Build folders
+build/
+cmake-build-*/
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
 cmake_install.cmake
-install_manifest.txt
-compile_commands.json
 CTestTestfile.cmake
-_deps
+install_manifest.txt
+Makefile
+
+# VS specific
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VSCode and JetBrains IDEs
+.vscode/
+.idea/
+
+# CMake presets
+CMakePresets.json
 CMakeUserPresets.json
-.idea
-cmake-build-*
+
+# Compiled source
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Debug files
+*.pdb
+*.idb
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache
+*.bak
+
+# System
 .DS_Store
+Thumbs.db
+
+_deps/
+/.vs
+/CMakeSettings.json
