@@ -1,0 +1,11 @@
+1. Remove polymorphic renderer, -> use context/backend class to do api specific stuff -> gets rid of maintaining two seperate renderers
+2. Remove polymorphic mesh -> draw in renderer using context/backend class that defines the draw command and passes mesh ebo, vbo etc
+-> this way we get rid off commandbuffer vs non command buffer conflicts
+3. Keep shaders api specific for now, logic differs quite a lot esp considering pipelines
+4. remove opengl check for swap buffers in window -> let context/backend handle it.
+5. Introduce texture manager and use editor to generate them instead of the renderer -> texture should be attached to material
+6. Introduce engine class or something similar to own all the managers
+7. Introduce SSBO and hence instancing.
+8. Introduce proper View Projection.
+9. Depth buffer
+10. Full in-depth code review in every engine class, use set everywhere, forward declare where possible
