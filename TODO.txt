@@ -10,6 +10,8 @@ or create a shader and texture backend/context owned by the main api contexts
 8. Introduce proper View Projection. --IN PROGRESS--
 9. Depth buffer
 10. Full in-depth code review in every engine class, use set everywhere, forward declare where possible, check constructor definitions, use ret
-fix include pollution
+
+
+fix include pollution --CURRENT--
 
 
