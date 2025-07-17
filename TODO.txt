@@ -6,12 +6,14 @@ or create a shader and texture backend/context owned by the main api contexts
 4. remove opengl check for swap buffers in window -> let context/backend handle it.
 5. Introduce texture manager and use editor to generate them instead of the renderer -> texture should be attached to material --DONE--
 6. Introduce engine class or something similar to own all the managers
-7. Introduce SSBO and hence instancing. 
-8. Introduce proper View Projection. --IN PROGRESS--
+7. Introduce SSBO and hence instancing. --IN PROGRESS--
+8. Introduce proper View Projection. --DONE--
 9. Depth buffer
 10. Full in-depth code review in every engine class, use set everywhere, forward declare where possible, check constructor definitions, use ret
+11. Implement OpenGL version
+12. Allow image upload for textures
 
 
-fix include pollution --CURRENT--
+fix include pollution --DONE--
 
 
