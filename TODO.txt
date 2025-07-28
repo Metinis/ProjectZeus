@@ -8,7 +8,7 @@ or create a shader and texture backend/context owned by the main api contexts
 6. Introduce engine class or something similar to own all the managers
 7. Introduce SSBO and hence instancing. --DONE--
 8. Introduce proper View Projection. --DONE--
-9. Depth buffer --IN PROGRESS--
+9. Depth buffer --DONE--
 10. Full in-depth code review in every engine class, use set everywhere, forward declare where possible, check constructor definitions, use ret
 11. Implement OpenGL version
 12. Allow image upload for textures --DONE--
@@ -16,4 +16,5 @@ or create a shader and texture backend/context owned by the main api contexts
 
 fix include pollution --DONE--
 
-
+A material is just a shader, texture and its properties, can be made into a struct instead
+A mesh is just a struct of vertices, indices and their arrangement
