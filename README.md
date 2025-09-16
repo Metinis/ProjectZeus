@@ -6,28 +6,27 @@ This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ th
 
 ## Features
 
-ENTT ECS integration,
-Lighting,
-A simple editor,
-Component manipulation,
-API independent rendering
+- ENTT ECS integration
+- Lighting
+- A simple editor
+- Component manipulation
+- API independent rendering
 
 
 ## Features to add
 
-Event System,
-Keyboard scene camera movement,
-Vulkan support,
-Mesh Loading,
-Compute Ray Tracing,
-User-defined components,
-Scripting,
-Physics bodies,
-And more..
+- Event System
+- Keyboard Scene Camera Movement
+- Vulkan Support
+- Mesh Loading
+- Compute Ray Tracing
+- User-Defined Components
+- Scripting
+- Physics Bodies
+- And More..
 
 ## Building
-
-git clone --recurse-submodules https://github.com/Metinis/ProjectZeus.git
-cd ProjectZeus
-cmake -S . -B build-release -DCMAKE_BUILD_TYPE=Release
-cmake --build build-release
+    git clone --recurse-submodules https://github.com/Metinis/ProjectZeus.git
+    cd ProjectZeus
+    cmake -S . -B build-release -DCMAKE_BUILD_TYPE=Release
+    cmake --build build-release
