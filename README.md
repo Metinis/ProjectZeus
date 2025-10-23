@@ -12,14 +12,14 @@ This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ th
 - Component manipulation
 - API independent rendering
 - Physics-based rendering
+- Event System
+- Model Loading
 
 
 ## Features to add
 
-- Event System
-- Keyboard Scene Camera Movement
+
 - Vulkan Support
-- Mesh Loading
 - Compute Ray Tracing
 - User-Defined Components
 - Scripting
