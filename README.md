@@ -8,9 +8,10 @@ This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ th
 
 - ENTT ECS integration
 - Lighting
-- A simple editor
+- An editor
 - Component manipulation
 - API independent rendering
+- Physics-based rendering
 
 
 ## Features to add
