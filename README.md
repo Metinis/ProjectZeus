@@ -2,7 +2,7 @@
 
 This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ that may eventually become a game engine.
 
-![Screenshot](/Screenshot2.png)
+![Screenshot](/Screenshot1.png)
 
 ## Features
 
@@ -12,6 +12,7 @@ This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ th
 - Component manipulation
 - API independent rendering
 - Physics-based rendering
+- Image-based lighting
 - Event System
 - Model Loading
 
