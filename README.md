@@ -15,6 +15,9 @@ This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ th
 - Image-based lighting
 - Event System
 - Model Loading
+- Asset Manager
+- GPU Resource Manager
+- Scene and Asset Serialization
 
 
 ## Features to add
