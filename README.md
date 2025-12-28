@@ -2,6 +2,8 @@
 
 This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ that may eventually become a game engine.
 
+![Screenshot](/Screenshot2.png)
+
 ![Screenshot](/Screenshot1.png)
 
 ## Features
