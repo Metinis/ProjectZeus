@@ -32,5 +32,6 @@ foreach(src ${SCRIPT_SOURCES})
     )
 
     add_dependencies(ZeusScripts ${script_name})
+    add_dependencies(ZeusEditor ${script_name})
 endforeach()
 
