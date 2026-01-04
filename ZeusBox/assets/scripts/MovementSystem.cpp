@@ -8,55 +8,39 @@
 class MovementSystem : public ZEN::ISystem {
     ~MovementSystem() override = default;
 
-    void onLoad(ZEN::Scene* scene) override {
+    void onLoad(ZEN::Scene *scene) override {
         ISystem::onLoad(scene);
+    }
+
+    void updateMovement(float dt) {
+        glm::vec3 dir(0.0f);
+        if (ZEN::Input::isKeyPressed(ZEN::Key::W)) dir.z -= 1.0f;
+        if (ZEN::Input::isKeyPressed(ZEN::Key::S)) dir.z += 1.0f;
+        if (ZEN::Input::isKeyPressed(ZEN::Key::A)) dir.x -= 1.0f;
+        if (ZEN::Input::isKeyPressed(ZEN::Key::D)) dir.x += 1.0f;
+        if (ZEN::Input::isKeyPressed(ZEN::Key::Space)) dir.y += 1.0f;
+        if (ZEN::Input::isKeyPressed(ZEN::Key::LeftShift)) dir.y -= 1.0f;
+        if (glm::length(dir) > 0.0f) dir = glm::normalize(dir);
+
+        if (glm::length(dir) == 0.0f) return;
+
         for (auto entity : m_Scene->getEntities("Player")) {
-            ZEN_SET(Player, entity, speed, 15.0f);
-            std::cout << "Speed: "
-                      << ZEN_GET(Player, entity, speed)
-                      << "\n";
+            float speed = ZEN_GET(Player, entity, speed);
+            entity.getComponent<ZEN::TransformComp>().localPosition += dir * dt * speed;
         }
     }
+
     void onUpdate(float dt) override {
-        if (ZEN::Input::isKeyPressed(ZEN::Key::W)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                float speed = ZEN_GET(Player, entity, speed);
-                entity.getComponent<ZEN::TransformComp>().localPosition.z -= 1.0f * dt * speed;
-            }
-        }
-        if (ZEN::Input::isKeyPressed(ZEN::Key::S)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.z += 1.0f * dt;
-            }
-        }
-        if (ZEN::Input::isKeyPressed(ZEN::Key::A)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.x -= 1.0f * dt;
-            }
-        }
-        if (ZEN::Input::isKeyPressed(ZEN::Key::D)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.x += 1.0f * dt;
-            }
-        }
-        if (ZEN::Input::isKeyPressed(ZEN::Key::Space)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.y += 1.0f * dt;
-            }
-        }
-        if (ZEN::Input::isKeyPressed(ZEN::Key::LeftShift)) {
-            for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.y -= 1.0f * dt;
-            }
-        }
+        updateMovement(dt);
     }
+
+
     void onUnload() override {
 
     }
-
 };
 
 //macos
-extern "C" ZEN_API ZEN::ISystem* createScriptSystem() {
+extern "C" ZEN_API ZEN::ISystem *createScriptSystem() {
     return new MovementSystem();
 }
