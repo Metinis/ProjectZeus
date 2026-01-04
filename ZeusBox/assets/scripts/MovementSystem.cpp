@@ -9,12 +9,18 @@ class MovementSystem : public ZEN::ISystem {
 
     void onLoad(ZEN::Scene* scene) override {
         ISystem::onLoad(scene);
-
+        for (auto entity : m_Scene->getEntities("Player")) {
+            m_Scene->getRuntimeField<float>(entity, "Player", "speed") = 15.0f;
+            std::cout << "Speed: "
+                      << m_Scene->getRuntimeField<float>(entity, "Player", "speed")
+                      << "\n";
+        }
     }
     void onUpdate(float dt) override {
         if (ZEN::Input::isKeyPressed(ZEN::Key::W)) {
             for (auto entity : m_Scene->getEntities("Player")) {
-                entity.getComponent<ZEN::TransformComp>().localPosition.z -= 1.0f * dt;
+                float speed = m_Scene->getRuntimeField<float>(entity, "Player", "speed");
+                entity.getComponent<ZEN::TransformComp>().localPosition.z -= 1.0f * dt * speed;
             }
         }
         if (ZEN::Input::isKeyPressed(ZEN::Key::S)) {

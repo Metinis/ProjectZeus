@@ -2,7 +2,7 @@
 
 struct Player {
     float health;
-    float speed;
+    float speed{10.0f};
 };
 
 REGISTER_COMPONENT(Player,
