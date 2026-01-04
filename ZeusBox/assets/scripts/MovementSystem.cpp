@@ -24,8 +24,8 @@ class MovementSystem : public ZEN::ISystem {
 
         if (glm::length(dir) == 0.0f) return;
 
-        for (auto entity : m_Scene->getEntities("Player")) {
-            float speed = ZEN_GET(Player, entity, speed);
+        for (auto entity : ZEN_GET_ENTITIES(Player)) {
+            float speed = ZEN_GET_FIELD(Player, entity, speed);
             entity.getComponent<ZEN::TransformComp>().localPosition += dir * dt * speed;
         }
     }
