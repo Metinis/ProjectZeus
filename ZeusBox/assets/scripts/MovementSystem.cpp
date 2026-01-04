@@ -32,6 +32,7 @@ class MovementSystem : public ZEN::ISystem {
 
     void onUpdate(float dt) override {
         updateMovement(dt);
+
     }
 
 
