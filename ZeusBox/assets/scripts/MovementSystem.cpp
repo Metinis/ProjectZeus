@@ -3,6 +3,7 @@
 #include "ZeusEngineCore/Scene.h"
 #include "ZeusEngineCore/input/Input.h"
 #include "ZeusEngineCore/input/KeyCodes.h"
+#include "components/Components.h"
 
 class MovementSystem : public ZEN::ISystem {
     ~MovementSystem() override = default;
@@ -10,16 +11,16 @@ class MovementSystem : public ZEN::ISystem {
     void onLoad(ZEN::Scene* scene) override {
         ISystem::onLoad(scene);
         for (auto entity : m_Scene->getEntities("Player")) {
-            m_Scene->getRuntimeField<float>(entity, "Player", "speed") = 15.0f;
+            ZEN_SET(Player, entity, speed, 15.0f);
             std::cout << "Speed: "
-                      << m_Scene->getRuntimeField<float>(entity, "Player", "speed")
+                      << ZEN_GET(Player, entity, speed)
                       << "\n";
         }
     }
     void onUpdate(float dt) override {
         if (ZEN::Input::isKeyPressed(ZEN::Key::W)) {
             for (auto entity : m_Scene->getEntities("Player")) {
-                float speed = m_Scene->getRuntimeField<float>(entity, "Player", "speed");
+                float speed = ZEN_GET(Player, entity, speed);
                 entity.getComponent<ZEN::TransformComp>().localPosition.z -= 1.0f * dt * speed;
             }
         }
