@@ -1,11 +1,8 @@
 #include <iostream>
 #include <ZeusEngineCore/scripting/ISystem.h>
-#include "ZeusEngineCore/Scene.h"
+#include <ZeusEngineCore/engine/Scene.h>
+#include "components/Components.h"
 
-//todo fix duplicates in .h includes
-struct Test {
-    float test;
-};
 REGISTER_COMPONENT(Test,
     FIELD(Test, test),
 );

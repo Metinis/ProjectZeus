@@ -1,9 +1,14 @@
 #include <iostream>
 #include <ZeusEngineCore/scripting/ISystem.h>
-#include "ZeusEngineCore/Scene.h"
-#include "ZeusEngineCore/input/Input.h"
-#include "ZeusEngineCore/input/KeyCodes.h"
+#include <ZeusEngineCore/engine/Scene.h>
+#include <ZeusEngineCore/input/Input.h>
+#include <ZeusEngineCore/input/KeyCodes.h>
 #include "components/Components.h"
+
+REGISTER_COMPONENT(Player,
+    FIELD(Player, health),
+    FIELD(Player, speed)
+);
 
 class MovementSystem : public ZEN::ISystem {
     ~MovementSystem() override = default;
