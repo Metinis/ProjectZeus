@@ -19,16 +19,16 @@ This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using E
 - Asset Manager
 - GPU Resource Manager
 - Scene and Asset Serialization
+- User-Defined Runtime Components
+- Scripting
 
 
 ## Features to add
 
-
 - Vulkan Support
 - Compute Ray Tracing
-- User-Defined Components
-- Scripting
-- Physics Bodies
+- Physics using Nvidia PhysX
+- Gizmos
 - And More..
 
 ## Building
