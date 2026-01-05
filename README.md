@@ -1,7 +1,6 @@
 ## Welcome to Zeus!
 
-This is a WIP rendering engine project in OpenGL (Vulkan coming soon) and C++ that may eventually become a game engine.
-
+This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using EnTT with ECS-based scripting.
 ![Screenshot](/Screenshot2.png)
 
 ![Screenshot](/Screenshot1.png)
