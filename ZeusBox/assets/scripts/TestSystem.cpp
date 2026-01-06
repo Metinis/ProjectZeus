@@ -17,7 +17,13 @@ class TestSystem : public ZEN::ISystem {
     void onUpdate(float dt) override {
         for (auto entity : ZEN_GET_ENTITIES(Test)) {
             float t = ZEN_GET_FIELD(Test, entity, test);
-            entity.getComponent<ZEN::TransformComp>().localRotation.y += dt * t;
+            auto& transform = entity.getComponent<ZEN::TransformComp>();
+            transform.localRotation =
+                glm::rotate(
+                    transform.localRotation,
+                    dt * t,
+                    glm::vec3(0.0f, 1.0f, 0.0f)
+                );
         }
     }
     void onUnload() override {
