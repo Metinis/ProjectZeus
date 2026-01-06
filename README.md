@@ -21,6 +21,7 @@ This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using E
 - Scene and Asset Serialization
 - User-Defined Runtime Components
 - Scripting
+- Gizmos
 
 
 ## Features to add
@@ -28,7 +29,6 @@ This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using E
 - Vulkan Support
 - Compute Ray Tracing
 - Physics using Nvidia PhysX
-- Gizmos
 - And More..
 
 ## Building
