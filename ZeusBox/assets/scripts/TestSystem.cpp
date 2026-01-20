@@ -32,6 +32,6 @@ class TestSystem : public ZEN::ISystem {
 
 };
 //macos
-extern "C" ZEN_API ZEN::ISystem* createScriptSystem() {
+extern "C" ZEN::ISystem* createScriptSystem() {
     return new TestSystem();
 }
