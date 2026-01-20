@@ -1,0 +1,90 @@
+Scene: Default
+Entities:
+  - Entity: 153015642929597213
+    TagComponent:
+      Tag: Directional Light
+    TransformComponent:
+      LocalPosition: [0, 0, 0]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    DirLightComponent:
+      Ambient: [0.1, 0.1, 0.1]
+      isPrimary: true
+    RuntimeComponents:
+      {}
+  - Entity: 15424667128200376761
+    TagComponent:
+      Tag: Scene Camera
+    TransformComponent:
+      LocalPosition: [0, 0, 0]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    SceneCameraComponent:
+      Aspect: 1.8096136
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 100
+    RuntimeComponents:
+      {}
+  - Entity: 6893559470405404166
+    TagComponent:
+      Tag: Primary Camera
+    TransformComponent:
+      LocalPosition: [0, 0, 5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    CameraComponent:
+      Aspect: 1.7777778
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 100
+      isPrimary: true
+    RuntimeComponents:
+      {}
+  - Entity: 896932036023184860
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 4
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    BoxColliderComponent:
+      HalfExtents: [0.5, 0.5, 0.5]
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      {}
+  - Entity: 8407046912699881395
+    TagComponent:
+      Tag: Skybox
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 7
+    SkyboxComponent:
+      SkyboxMaterialID: 18091022924221933426
+      EqMaterialID: 4349247939343788667
+      ConMaterialID: 8920911879429871587
+      PrefilterMaterialID: 14802942565078289561
+      BRDFLUTMaterialID: 14339432602603041493
+      EnvGenerated: false
+    RuntimeComponents:
+      {}
