@@ -1,6 +1,6 @@
 Scene: Default
 Entities:
-  - Entity: 153015642929597213
+  - Entity: 15188039146049375271
     TagComponent:
       Tag: Directional Light
     TransformComponent:
@@ -12,7 +12,7 @@ Entities:
       isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 15424667128200376761
+  - Entity: 5233572788554901040
     TagComponent:
       Tag: Scene Camera
     TransformComponent:
@@ -26,7 +26,7 @@ Entities:
       Far: 100
     RuntimeComponents:
       {}
-  - Entity: 6893559470405404166
+  - Entity: 5687332651919584805
     TagComponent:
       Tag: Primary Camera
     TransformComponent:
@@ -41,7 +41,7 @@ Entities:
       isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 896932036023184860
+  - Entity: 12187053406408048890
     TagComponent:
       Tag: Cube
     TransformComponent:
@@ -70,7 +70,7 @@ Entities:
       IsTrigger: false
     RuntimeComponents:
       {}
-  - Entity: 8407046912699881395
+  - Entity: 1042085423463676029
     TagComponent:
       Tag: Skybox
     TransformComponent:
@@ -80,11 +80,11 @@ Entities:
     MeshComponent:
       MeshID: 7
     SkyboxComponent:
-      SkyboxMaterialID: 18091022924221933426
-      EqMaterialID: 4349247939343788667
-      ConMaterialID: 8920911879429871587
-      PrefilterMaterialID: 14802942565078289561
-      BRDFLUTMaterialID: 14339432602603041493
+      SkyboxMaterialID: 15145109154405176790
+      EqMaterialID: 10787802387807418385
+      ConMaterialID: 16950990500935773412
+      PrefilterMaterialID: 13696025203393701121
+      BRDFLUTMaterialID: 16099354419108609743
       EnvGenerated: false
     RuntimeComponents:
       {}

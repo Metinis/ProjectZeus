@@ -16,7 +16,13 @@ class MovementSystem : public ZEN::ISystem {
     ~MovementSystem() override = default;
 
     void onLoad(ZEN::Scene *scene) override {
+        if (!scene) {
+            // Scene pointer is null
+            std::cerr << "Error: scene pointer is null!" << std::endl;
+            return;
+        }
         ISystem::onLoad(scene);
+        m_Scene->getEntityByRegistryID(1);
     }
 
     void updateMovement(float dt) {
@@ -31,10 +37,11 @@ class MovementSystem : public ZEN::ISystem {
 
         if (glm::length(dir) == 0.0f) return;
 
-        for (auto entity : ZEN_GET_ENTITIES(Player)) {
+        /*for (auto entityHandle : ZEN_GET_ENTITIES(Player)) {
+            ZEN::Entity entity(m_Scene, entityHandle);
             float speed = ZEN_GET_FIELD(Player, entity, speed);
             entity.getComponent<ZEN::TransformComp>().localPosition += dir * dt * speed;
-        }
+        }*/
     }
 
     void onUpdate(float dt) override {
@@ -87,6 +94,6 @@ class MovementSystem : public ZEN::ISystem {
 };
 
 //macos
-extern "C" ZEN::ISystem *createScriptSystem() {
+extern "C" __declspec(dllexport) ZEN::ISystem *createScriptSystem() {
     return new MovementSystem();
 }

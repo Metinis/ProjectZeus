@@ -32,6 +32,6 @@ class TestSystem : public ZEN::ISystem {
 
 };
 //macos
-extern "C" ZEN::ISystem* createScriptSystem() {
+extern "C" __declspec(dllexport) ZEN::ISystem* createScriptSystem() {
     return new TestSystem();
 }
