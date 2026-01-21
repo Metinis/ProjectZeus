@@ -1,6 +1,6 @@
 Scene: Default
 Entities:
-  - Entity: 13371296763491897246
+  - Entity: 8973638514598633663
     TagComponent:
       Tag: Skybox
     TransformComponent:
@@ -10,15 +10,15 @@ Entities:
     MeshComponent:
       MeshID: 7
     SkyboxComponent:
-      SkyboxMaterialID: 1890452868664699756
-      EqMaterialID: 10099316903932474653
-      ConMaterialID: 7702808640223327384
-      PrefilterMaterialID: 15332016313069864870
-      BRDFLUTMaterialID: 5890661972849622094
+      SkyboxMaterialID: 12326214385386389944
+      EqMaterialID: 15748365536659369613
+      ConMaterialID: 4524856156433452945
+      PrefilterMaterialID: 877973092054042160
+      BRDFLUTMaterialID: 9818436791983766502
       EnvGenerated: false
     RuntimeComponents:
       {}
-  - Entity: 2393474132649212141
+  - Entity: 8104479838225661687
     TagComponent:
       Tag: Cube
     TransformComponent:
@@ -30,7 +30,7 @@ Entities:
     MaterialComponent:
       MaterialID: 4
     RigidBodyComponent:
-      MotionType: 2
+      MotionType: 1
       Mass: 1
       LinearDamping: 0
       AngularDamping: 0.05
@@ -46,8 +46,12 @@ Entities:
       Offset: [0, 0, 0]
       IsTrigger: false
     RuntimeComponents:
-      {}
-  - Entity: 360686844188714026
+      Player:
+        health: 0
+        speed: 5
+        jumpImpulse: 0
+        rotationSpeed: 0
+  - Entity: 777758811698931563
     TagComponent:
       Tag: Primary Camera
     TransformComponent:
@@ -62,21 +66,21 @@ Entities:
       isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 5363051281924931799
+  - Entity: 13171830786197689235
     TagComponent:
       Tag: Scene Camera
     TransformComponent:
-      LocalPosition: [0, 0, 0]
-      LocalRotation: [0, 0, 0, 1]
+      LocalPosition: [-1.3203907, 2.1548347, -0.75810397]
+      LocalRotation: [-0.10421125, -0.14870252, -0.01576047, 0.9832494]
       LocalScale: [1, 1, 1]
     SceneCameraComponent:
-      Aspect: 1.8096136
+      Aspect: 1.766529
       Fov: 1.0471976
       Near: 0.1
       Far: 100
     RuntimeComponents:
       {}
-  - Entity: 7620164883655988797
+  - Entity: 16558055531283218814
     TagComponent:
       Tag: Directional Light
     TransformComponent:

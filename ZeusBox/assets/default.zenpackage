@@ -1,18 +1,53 @@
 Assets: Default
 Meshes:
-  - Mesh: 1
-    Name: Cube
-    Path: /assets/meshes/1.bin
   - Mesh: 7
     Name: Skybox
     Path: /assets/meshes/7.bin
-  - Mesh: 2
-    Name: Quad
-    Path: /assets/meshes/2.bin
   - Mesh: 3
     Name: Sphere
     Path: /assets/meshes/3.bin
+  - Mesh: 2
+    Name: Quad
+    Path: /assets/meshes/2.bin
+  - Mesh: 1
+    Name: Cube
+    Path: /assets/meshes/1.bin
 Textures:
+  - Texture: 17064880790976493394
+    Name: Convuluted Map
+    Path: ""
+    Type: CubemapHDR
+    Mip: false
+    AbsPath: false
+    Dimensions: [32, 32]
+  - Texture: 14587771891000161177
+    Name: BRDF Map
+    Path: ""
+    Type: BRDF
+    Mip: false
+    AbsPath: false
+    Dimensions: [1024, 1024]
+  - Texture: 2055242702388774666
+    Name: Skybox
+    Path: ""
+    Type: CubemapHDR
+    Mip: true
+    AbsPath: false
+    Dimensions: [1024, 1024]
+  - Texture: 3608603987021217337
+    Name: Prefilter Map
+    Path: ""
+    Type: Prefilter
+    Mip: false
+    AbsPath: false
+    Dimensions: [128, 128]
+  - Texture: 8584221208943182073
+    Name: HDRTex
+    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
+    Type: HDR
+    Mip: false
+    AbsPath: false
+    Dimensions: [0, 0]
   - Texture: 6
     Name: Default
     Path: ""
@@ -20,92 +55,129 @@ Textures:
     Mip: false
     AbsPath: false
     Dimensions: [0, 0]
-  - Texture: 13653359776411598007
-    Name: Convuluted Map
-    Path: ""
-    Type: CubemapHDR
-    Mip: false
-    AbsPath: false
-    Dimensions: [32, 32]
-  - Texture: 13680244075916414178
-    Name: BRDF Map
-    Path: ""
-    Type: BRDF
-    Mip: false
-    AbsPath: false
-    Dimensions: [1024, 1024]
-  - Texture: 7232984783084334200
-    Name: Skybox
-    Path: ""
-    Type: CubemapHDR
-    Mip: true
-    AbsPath: false
-    Dimensions: [1024, 1024]
-  - Texture: 14900132937020383487
-    Name: HDRTex
-    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
-    Type: HDR
-    Mip: false
-    AbsPath: false
-    Dimensions: [0, 0]
-  - Texture: 14651202088483862136
-    Name: Prefilter Map
-    Path: ""
-    Type: Prefilter
-    Mip: false
-    AbsPath: false
-    Dimensions: [128, 128]
 Shaders:
-  - Shader: 5
-    Name: Default
-    VertPath: /shaders/pbr.vert
-    FragPath: /shaders/pbr.frag
+  - Shader: 15741389414914516531
+    Name: ""
+    VertPath: /shaders/prefilter.vert
+    FragPath: /shaders/prefilter.frag
     GeoPath: ""
-  - Shader: 8
-    Name: QuadShader
-    VertPath: /shaders/screenQuad.vert
-    FragPath: /shaders/screenQuad.frag
+  - Shader: 9491357405148541675
+    Name: ""
+    VertPath: /shaders/glskyboxHDR.vert
+    FragPath: /shaders/glskyboxHDR.frag
     GeoPath: ""
   - Shader: 9
     Name: NormalsShader
     VertPath: /shaders/normal-visual.vert
     FragPath: /shaders/normal-visual.frag
     GeoPath: /shaders/normal-visual.geom
+  - Shader: 8768919590022818454
+    Name: ""
+    VertPath: /shaders/brdf-con.vert
+    FragPath: /shaders/brdf-con.frag
+    GeoPath: ""
   - Shader: 10
     Name: PickingShader
     VertPath: /shaders/pickingShader.vert
     FragPath: /shaders/pickingShader.frag
     GeoPath: ""
-  - Shader: 10930395089364204503
-    Name: ""
-    VertPath: /shaders/glskyboxHDR.vert
-    FragPath: /shaders/glskyboxHDR.frag
+  - Shader: 8
+    Name: QuadShader
+    VertPath: /shaders/screenQuad.vert
+    FragPath: /shaders/screenQuad.frag
     GeoPath: ""
-  - Shader: 15240378101372780245
+  - Shader: 9811399302238006374
     Name: ""
     VertPath: /shaders/eq-to-cubemap.vert
     FragPath: /shaders/eq-to-cubemap.frag
     GeoPath: ""
-  - Shader: 16022259729847988299
+  - Shader: 5
+    Name: Default
+    VertPath: /shaders/pbr.vert
+    FragPath: /shaders/pbr.frag
+    GeoPath: ""
+  - Shader: 12187727290299741189
     Name: ""
     VertPath: /shaders/irradiance-con.vert
     FragPath: /shaders/irradiance-con.frag
     GeoPath: ""
-  - Shader: 12689768982992533419
-    Name: ""
-    VertPath: /shaders/prefilter.vert
-    FragPath: /shaders/prefilter.frag
-    GeoPath: ""
-  - Shader: 16109824973002592881
-    Name: ""
-    VertPath: /shaders/brdf-con.vert
-    FragPath: /shaders/brdf-con.frag
-    GeoPath: ""
 Materials:
-  - Material: 7702808640223327384
+  - Material: 9818436791983766502
+    Name: BRDFMat
+    Shader: 8768919590022818454
+    Texture: 14587771891000161177
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 877973092054042160
+    Name: PrefilterMat
+    Shader: 15741389414914516531
+    Texture: 3608603987021217337
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 15748365536659369613
+    Name: EqMat
+    Shader: 9811399302238006374
+    Texture: 8584221208943182073
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 4524856156433452945
     Name: ConMat
-    Shader: 16022259729847988299
-    Texture: 13653359776411598007
+    Shader: 12187727290299741189
+    Texture: 17064880790976493394
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 12326214385386389944
+    Name: SkyboxMat
+    Shader: 9491357405148541675
+    Texture: 2055242702388774666
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
@@ -124,78 +196,6 @@ Materials:
     Name: Default
     Shader: 5
     Texture: 6
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 10099316903932474653
-    Name: EqMat
-    Shader: 15240378101372780245
-    Texture: 14900132937020383487
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 1890452868664699756
-    Name: SkyboxMat
-    Shader: 10930395089364204503
-    Texture: 7232984783084334200
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 15332016313069864870
-    Name: PrefilterMat
-    Shader: 12689768982992533419
-    Texture: 14651202088483862136
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 5890661972849622094
-    Name: BRDFMat
-    Shader: 16109824973002592881
-    Texture: 13680244075916414178
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
