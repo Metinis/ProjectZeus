@@ -1,50 +1,29 @@
 Scene: Default
 Entities:
-  - Entity: 4871770765441788006
+  - Entity: 17073280015874042812
     TagComponent:
-      Tag: Skybox
+      Tag: Directional Light
     TransformComponent:
-      LocalPosition: [0, 0, -5]
+      LocalPosition: [0, 0, 0]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    MeshComponent:
-      MeshID: 7
-    SkyboxComponent:
-      SkyboxMaterialID: 10009472206015172434
-      EqMaterialID: 4369242766740537536
-      ConMaterialID: 4234085482185317594
-      PrefilterMaterialID: 5071971406616263130
-      BRDFLUTMaterialID: 10645346645269445834
-      EnvGenerated: false
+    DirLightComponent:
+      Ambient: [0.1, 0.1, 0.1]
+      isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 16559879156675522361
+  - Entity: 3271881974758464162
     TagComponent:
-      Tag: Cube
+      Tag: Scene Camera
     TransformComponent:
-      LocalPosition: [0, 0, -5]
+      LocalPosition: [-1.015975, 1.3280935, 0]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    MeshComponent:
-      MeshID: 1
-    MaterialComponent:
-      MaterialID: 4
-    RigidBodyComponent:
-      MotionType: 2
-      Mass: 1
-      LinearDamping: 0
-      AngularDamping: 0.05
-      AllowSleep: true
-      LockPosX: false
-      LockPosY: false
-      LockPosZ: false
-      LockRotX: false
-      LockRotY: false
-      LockRotZ: false
-    BoxColliderComponent:
-      HalfExtents: [0.5, 0.5, 0.5]
-      Offset: [0, 0, 0]
-      IsTrigger: false
+    SceneCameraComponent:
+      Aspect: 1.8096136
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 100
     RuntimeComponents:
       {}
   - Entity: 9549928207682165613
@@ -62,29 +41,54 @@ Entities:
       isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 3271881974758464162
+  - Entity: 16559879156675522361
     TagComponent:
-      Tag: Scene Camera
+      Tag: Cube
     TransformComponent:
-      LocalPosition: [0, 0, 0]
+      LocalPosition: [0, 0, -5]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    SceneCameraComponent:
-      Aspect: 1.8096136
-      Fov: 1.0471976
-      Near: 0.1
-      Far: 100
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 4
+    RigidBodyComponent:
+      MotionType: 1
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    BoxColliderComponent:
+      HalfExtents: [0.5, 0.5, 0.5]
+      Offset: [0, 0, 0]
+      IsTrigger: false
     RuntimeComponents:
-      {}
-  - Entity: 17073280015874042812
+      Player:
+        health: 0
+        speed: 5
+        jumpImpulse: 0
+        rotationSpeed: 0
+  - Entity: 4871770765441788006
     TagComponent:
-      Tag: Directional Light
+      Tag: Skybox
     TransformComponent:
-      LocalPosition: [0, 0, 0]
+      LocalPosition: [0, 0, -5]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    DirLightComponent:
-      Ambient: [0.1, 0.1, 0.1]
-      isPrimary: true
+    MeshComponent:
+      MeshID: 7
+    SkyboxComponent:
+      SkyboxMaterialID: 10009472206015172434
+      EqMaterialID: 4369242766740537536
+      ConMaterialID: 4234085482185317594
+      PrefilterMaterialID: 5071971406616263130
+      BRDFLUTMaterialID: 10645346645269445834
+      EnvGenerated: false
     RuntimeComponents:
       {}
