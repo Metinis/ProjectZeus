@@ -1,47 +1,24 @@
 Scene: Default
 Entities:
-  - Entity: 15188039146049375271
+  - Entity: 4871770765441788006
     TagComponent:
-      Tag: Directional Light
+      Tag: Skybox
     TransformComponent:
-      LocalPosition: [0, 0, 0]
+      LocalPosition: [0, 0, -5]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    DirLightComponent:
-      Ambient: [0.1, 0.1, 0.1]
-      isPrimary: true
+    MeshComponent:
+      MeshID: 7
+    SkyboxComponent:
+      SkyboxMaterialID: 10009472206015172434
+      EqMaterialID: 4369242766740537536
+      ConMaterialID: 4234085482185317594
+      PrefilterMaterialID: 5071971406616263130
+      BRDFLUTMaterialID: 10645346645269445834
+      EnvGenerated: false
     RuntimeComponents:
       {}
-  - Entity: 5233572788554901040
-    TagComponent:
-      Tag: Scene Camera
-    TransformComponent:
-      LocalPosition: [0, 0, 0]
-      LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
-    SceneCameraComponent:
-      Aspect: 1.8096136
-      Fov: 1.0471976
-      Near: 0.1
-      Far: 100
-    RuntimeComponents:
-      {}
-  - Entity: 5687332651919584805
-    TagComponent:
-      Tag: Primary Camera
-    TransformComponent:
-      LocalPosition: [0, 0, 5]
-      LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
-    CameraComponent:
-      Aspect: 1.7777778
-      Fov: 1.0471976
-      Near: 0.1
-      Far: 100
-      isPrimary: true
-    RuntimeComponents:
-      {}
-  - Entity: 12187053406408048890
+  - Entity: 16559879156675522361
     TagComponent:
       Tag: Cube
     TransformComponent:
@@ -70,21 +47,44 @@ Entities:
       IsTrigger: false
     RuntimeComponents:
       {}
-  - Entity: 1042085423463676029
+  - Entity: 9549928207682165613
     TagComponent:
-      Tag: Skybox
+      Tag: Primary Camera
     TransformComponent:
-      LocalPosition: [0, 0, -5]
+      LocalPosition: [0, 0, 5]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
-    MeshComponent:
-      MeshID: 7
-    SkyboxComponent:
-      SkyboxMaterialID: 15145109154405176790
-      EqMaterialID: 10787802387807418385
-      ConMaterialID: 16950990500935773412
-      PrefilterMaterialID: 13696025203393701121
-      BRDFLUTMaterialID: 16099354419108609743
-      EnvGenerated: false
+    CameraComponent:
+      Aspect: 1.7777778
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 100
+      isPrimary: true
+    RuntimeComponents:
+      {}
+  - Entity: 3271881974758464162
+    TagComponent:
+      Tag: Scene Camera
+    TransformComponent:
+      LocalPosition: [0, 0, 0]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    SceneCameraComponent:
+      Aspect: 1.8096136
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 100
+    RuntimeComponents:
+      {}
+  - Entity: 17073280015874042812
+    TagComponent:
+      Tag: Directional Light
+    TransformComponent:
+      LocalPosition: [0, 0, 0]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    DirLightComponent:
+      Ambient: [0.1, 0.1, 0.1]
+      isPrimary: true
     RuntimeComponents:
       {}

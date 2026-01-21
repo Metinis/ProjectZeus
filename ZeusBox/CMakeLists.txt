@@ -19,12 +19,6 @@ foreach(src ${SCRIPT_SOURCES})
 
     add_library(${script_name} SHARED ${src})
 
-    if(MSVC)
-    set_property(TARGET ${script_name} PROPERTY
-        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL"
-    )
-endif()
-
     target_link_libraries(${script_name} PRIVATE ZeusEngineCore)
 
     set_target_properties(${script_name} PROPERTIES
