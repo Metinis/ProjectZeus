@@ -93,7 +93,7 @@ class MovementSystem : public ZEN::ISystem {
     }
 };
 
-//macos
-extern "C" __declspec(dllexport) ZEN::ISystem *createScriptSystem() {
+
+extern "C" PLUGIN_API ZEN::ISystem *createScriptSystem() {
     return new MovementSystem();
 }

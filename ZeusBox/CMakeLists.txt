@@ -19,6 +19,9 @@ foreach(src ${SCRIPT_SOURCES})
 
     add_library(${script_name} SHARED ${src})
 
+    target_compile_definitions(${script_name}
+    PRIVATE PLUGIN_EXPORTS)
+
     target_link_libraries(${script_name} PRIVATE ZeusEngineCore)
 
     set_target_properties(${script_name} PROPERTIES
