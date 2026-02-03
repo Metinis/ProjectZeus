@@ -22,13 +22,15 @@ This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using E
 - User-Defined Runtime Components
 - Scripting
 - Gizmos
+- Physics using Jolt
 
 
 ## Features to add
 
 - Vulkan Support
 - Compute Ray Tracing
-- Physics using Nvidia PhysX
+- Collider manipulation
+- Collision callbacks
 - And More..
 
 ## Building
