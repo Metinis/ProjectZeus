@@ -16,14 +16,11 @@ class TestSystem : public ZEN::ISystem {
     }
     void onUpdate(float dt) override {
         for (auto entity : ZEN_GET_ENTITIES(Test)) {
-            float t = ZEN_GET_FIELD(Test, entity, test);
-            auto& transform = entity.getComponent<ZEN::TransformComp>();
-            transform.localRotation =
-                glm::rotate(
-                    transform.localRotation,
-                    dt * t,
-                    glm::vec3(0.0f, 1.0f, 0.0f)
-                );
+            if (auto* pc = entity.tryGetComponent<ZEN::PhysicsBodyComp>()) {
+                auto& tc = entity.getComponent<ZEN::TransformComp>();
+                float rotationSpeed = ZEN_GET_FIELD(Test, entity, test);
+                pc->rotate(glm::vec3(0.0f, 1.0f, 0.0f), glm::radians(rotationSpeed) * dt);
+            }
         }
     }
     void onUnload() override {

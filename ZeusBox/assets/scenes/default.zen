@@ -1,6 +1,6 @@
 Scene: Default
 Entities:
-  - Entity: 8973638514598633663
+  - Entity: 12010222633743584655
     TagComponent:
       Tag: Skybox
     TransformComponent:
@@ -10,15 +10,15 @@ Entities:
     MeshComponent:
       MeshID: 7
     SkyboxComponent:
-      SkyboxMaterialID: 12326214385386389944
-      EqMaterialID: 15748365536659369613
-      ConMaterialID: 4524856156433452945
-      PrefilterMaterialID: 877973092054042160
-      BRDFLUTMaterialID: 9818436791983766502
+      SkyboxMaterialID: 9655217580260276702
+      EqMaterialID: 8046107614662401257
+      ConMaterialID: 1310146876374489572
+      PrefilterMaterialID: 5529682289898676789
+      BRDFLUTMaterialID: 4687583308344083754
       EnvGenerated: false
     RuntimeComponents:
       {}
-  - Entity: 8104479838225661687
+  - Entity: 12555377559408101129
     TagComponent:
       Tag: Cube
     TransformComponent:
@@ -30,7 +30,7 @@ Entities:
     MaterialComponent:
       MaterialID: 4
     RigidBodyComponent:
-      MotionType: 1
+      MotionType: 2
       Mass: 1
       LinearDamping: 0
       AngularDamping: 0.05
@@ -46,12 +46,8 @@ Entities:
       Offset: [0, 0, 0]
       IsTrigger: false
     RuntimeComponents:
-      Player:
-        health: 0
-        speed: 5
-        jumpImpulse: 0
-        rotationSpeed: 0
-  - Entity: 777758811698931563
+      {}
+  - Entity: 10141767879819826317
     TagComponent:
       Tag: Primary Camera
     TransformComponent:
@@ -66,21 +62,21 @@ Entities:
       isPrimary: true
     RuntimeComponents:
       {}
-  - Entity: 13171830786197689235
+  - Entity: 14321394820703040485
     TagComponent:
       Tag: Scene Camera
     TransformComponent:
-      LocalPosition: [-1.3203907, 2.1548347, -0.75810397]
-      LocalRotation: [-0.10421125, -0.14870252, -0.01576047, 0.9832494]
+      LocalPosition: [0.46489623, 0.038457636, -1.8807559]
+      LocalRotation: [0.02354165, 0.039248966, -0.00092495803, 0.99895173]
       LocalScale: [1, 1, 1]
     SceneCameraComponent:
-      Aspect: 1.766529
+      Aspect: 1.7738589
       Fov: 1.0471976
       Near: 0.1
       Far: 100
     RuntimeComponents:
       {}
-  - Entity: 16558055531283218814
+  - Entity: 14188627512497543247
     TagComponent:
       Tag: Directional Light
     TransformComponent:
