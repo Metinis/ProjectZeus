@@ -22,7 +22,6 @@ class MovementSystem : public ZEN::ISystem {
             return;
         }
         ISystem::onLoad(scene);
-        m_Scene->getEntityByRegistryID(1);
     }
 
     void updateMovement(float dt) {
@@ -87,6 +86,14 @@ class MovementSystem : public ZEN::ISystem {
         }
     }
 
+    void onCollision(const ZEN::CollisionEvent& e) override {
+        for (auto entity : ZEN_GET_ENTITIES(Player)) {
+            if (auto* pc = entity.tryGetComponent<ZEN::PhysicsBodyComp>()) {
+                auto& tc = entity.getComponent<ZEN::TransformComp>();
+                pc->addImpulse({0.0f, 2, 0.0f});
+            }
+        }
+    }
 
     void onUnload() override {
 

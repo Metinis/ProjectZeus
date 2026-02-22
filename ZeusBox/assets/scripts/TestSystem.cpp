@@ -23,6 +23,9 @@ class TestSystem : public ZEN::ISystem {
             }
         }
     }
+    void onCollision(const ZEN::CollisionEvent& e) override {
+
+    }
     void onUnload() override {
 
     }
