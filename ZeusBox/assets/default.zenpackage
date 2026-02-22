@@ -3,51 +3,149 @@ Meshes:
   - Mesh: 7
     Name: Skybox
     Path: /assets/meshes/7.bin
+  - Mesh: 1
+    Name: Cube
+    Path: /assets/meshes/1.bin
   - Mesh: 3
     Name: Sphere
     Path: /assets/meshes/3.bin
   - Mesh: 2
     Name: Quad
     Path: /assets/meshes/2.bin
-  - Mesh: 1
-    Name: Cube
-    Path: /assets/meshes/1.bin
 Textures:
-  - Texture: 15472858248761413865
-    Name: Prefilter Map
-    Path: ""
-    Type: Prefilter
-    Mip: false
-    AbsPath: false
-    Dimensions: [128, 128]
-  - Texture: 9680698641192291137
+  - Texture: 4097729231815544016
     Name: BRDF Map
     Path: ""
     Type: BRDF
     Mip: false
     AbsPath: false
     Dimensions: [1024, 1024]
-  - Texture: 12569725665693645109
+  - Texture: 10581606168535385062
     Name: HDRTex
     Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
     Type: HDR
     Mip: false
     AbsPath: false
     Dimensions: [0, 0]
-  - Texture: 1496522459956642796
-    Name: Convuluted Map
+  - Texture: 3707317957233000477
+    Name: dirty-red-bricks_normal-dx
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dirty-red-bricks-ue/dirty-red-bricks_normal-dx.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 13705542480011610694
+    Name: dark-wood-stain_roughness
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dark-wood-stain-ue/dark-wood-stain_roughness.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 731442068274079048
+    Name: Prefilter Map
     Path: ""
-    Type: CubemapHDR
+    Type: Prefilter
     Mip: false
     AbsPath: false
-    Dimensions: [32, 32]
-  - Texture: 10185492720161273550
+    Dimensions: [128, 128]
+  - Texture: 390724613505326252
+    Name: dirty-red-bricks_ao
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dirty-red-bricks-ue/dirty-red-bricks_ao.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 188687385959444242
+    Name: rustediron2_normal
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/rusted_iron/rustediron2_normal.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 9630081752689673090
     Name: Skybox
     Path: ""
     Type: CubemapHDR
     Mip: true
     AbsPath: false
     Dimensions: [1024, 1024]
+  - Texture: 10850383713259921781
+    Name: rustediron2_roughness
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/rusted_iron/rustediron2_roughness.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 17960333557313073779
+    Name: Convuluted Map
+    Path: ""
+    Type: CubemapHDR
+    Mip: false
+    AbsPath: false
+    Dimensions: [32, 32]
+  - Texture: 8601334342079803387
+    Name: dirty-red-bricks_albedo
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dirty-red-bricks-ue/dirty-red-bricks_albedo.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 9216950761300535746
+    Name: dark-wood-stain_ao
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dark-wood-stain-ue/dark-wood-stain_ao.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 15013866623848441089
+    Name: dirty-red-bricks_metallic
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dirty-red-bricks-ue/dirty-red-bricks_metallic.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 10891541880090571305
+    Name: dark-wood-stain_normal-dx
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dark-wood-stain-ue/dark-wood-stain_normal-dx.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 2229786046129393866
+    Name: dirty-red-bricks_roughness
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dirty-red-bricks-ue/dirty-red-bricks_roughness.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 7136929277321252568
+    Name: rustediron2_basecolor
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/rusted_iron/rustediron2_basecolor.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 9475367503929765801
+    Name: dark-wood-stain_albedo
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dark-wood-stain-ue/dark-wood-stain_albedo.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 394982171619611931
+    Name: dark-wood-stain_metallic
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/dark-wood-stain-ue/dark-wood-stain_metallic.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
+  - Texture: 4745653338976443022
+    Name: rustediron2_metallic
+    Path: /Users/metinis/CLionProjects/ZeusEngine/ZeusBox/assets/textures/rusted_iron/rustediron2_metallic.png
+    Type: Texture2D
+    Mip: false
+    AbsPath: true
+    Dimensions: [0, 0]
   - Texture: 6
     Name: Default
     Path: ""
@@ -56,20 +154,15 @@ Textures:
     AbsPath: false
     Dimensions: [0, 0]
 Shaders:
-  - Shader: 12928177079928565403
-    Name: ""
-    VertPath: /shaders/prefilter.vert
-    FragPath: /shaders/prefilter.frag
-    GeoPath: ""
-  - Shader: 14022265388091101377
+  - Shader: 14910983915705030749
     Name: ""
     VertPath: /shaders/eq-to-cubemap.vert
     FragPath: /shaders/eq-to-cubemap.frag
     GeoPath: ""
-  - Shader: 15264161634246177025
+  - Shader: 9173101477522825714
     Name: ""
-    VertPath: /shaders/glskyboxHDR.vert
-    FragPath: /shaders/glskyboxHDR.frag
+    VertPath: /shaders/irradiance-con.vert
+    FragPath: /shaders/irradiance-con.frag
     GeoPath: ""
   - Shader: 10
     Name: PickingShader
@@ -81,31 +174,36 @@ Shaders:
     VertPath: /shaders/normal-visual.vert
     FragPath: /shaders/normal-visual.frag
     GeoPath: /shaders/normal-visual.geom
+  - Shader: 13880815873190366375
+    Name: ""
+    VertPath: /shaders/brdf-con.vert
+    FragPath: /shaders/brdf-con.frag
+    GeoPath: ""
   - Shader: 8
     Name: QuadShader
     VertPath: /shaders/screenQuad.vert
     FragPath: /shaders/screenQuad.frag
     GeoPath: ""
-  - Shader: 6739328548224438351
+  - Shader: 10392678045432342549
     Name: ""
-    VertPath: /shaders/irradiance-con.vert
-    FragPath: /shaders/irradiance-con.frag
+    VertPath: /shaders/prefilter.vert
+    FragPath: /shaders/prefilter.frag
+    GeoPath: ""
+  - Shader: 15199800525330094966
+    Name: ""
+    VertPath: /shaders/glskyboxHDR.vert
+    FragPath: /shaders/glskyboxHDR.frag
     GeoPath: ""
   - Shader: 5
     Name: Default
     VertPath: /shaders/pbr.vert
     FragPath: /shaders/pbr.frag
     GeoPath: ""
-  - Shader: 9709465670566784304
-    Name: ""
-    VertPath: /shaders/brdf-con.vert
-    FragPath: /shaders/brdf-con.frag
-    GeoPath: ""
 Materials:
-  - Material: 5529682289898676789
+  - Material: 11281537222902799020
     Name: PrefilterMat
-    Shader: 12928177079928565403
-    Texture: 15472858248761413865
+    Shader: 10392678045432342549
+    Texture: 731442068274079048
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
@@ -120,46 +218,28 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 8046107614662401257
-    Name: EqMat
-    Shader: 14022265388091101377
-    Texture: 12569725665693645109
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
+  - Material: 11759543862426804946
+    Name: Brick
+    Shader: 5
+    Texture: 8601334342079803387
+    MetallicTexture: 15013866623848441089
+    RoughnessTexture: 2229786046129393866
+    NormalTexture: 3707317957233000477
+    AoTexture: 390724613505326252
     Albedo: [1, 1, 1]
     Metallic: 1
     Roughness: 1
     AO: 1
     Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 1310146876374489572
-    Name: ConMat
-    Shader: 6739328548224438351
-    Texture: 1496522459956642796
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 4687583308344083754
+    UseAlbedo: true
+    UseMetallic: true
+    UseRoughness: true
+    UseNormal: true
+    UseAO: true
+  - Material: 10851310005603372183
     Name: BRDFMat
-    Shader: 9709465670566784304
-    Texture: 9680698641192291137
+    Shader: 13880815873190366375
+    Texture: 4097729231815544016
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
@@ -174,14 +254,50 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 4
-    Name: Default
+  - Material: 11200714315347614806
+    Name: RustIron
+    Shader: 5
+    Texture: 7136929277321252568
+    MetallicTexture: 4745653338976443022
+    RoughnessTexture: 10850383713259921781
+    NormalTexture: 188687385959444242
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: true
+    UseRoughness: true
+    UseNormal: true
+    UseAO: false
+  - Material: 13525158331164125358
+    Name: Mat
     Shader: 5
     Texture: 6
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
     AoTexture: 0
+    Albedo: [0.21, 0, 0]
+    Metallic: 0.21
+    Roughness: 0.21
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 17645378171573315776
+    Name: ConMat
+    Shader: 9173101477522825714
+    Texture: 17960333557313073779
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
     Albedo: [1, 1, 1]
     Metallic: 1
     Roughness: 1
@@ -192,10 +308,64 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 9655217580260276702
+  - Material: 1524053275300966997
+    Name: EqMat
+    Shader: 14910983915705030749
+    Texture: 10581606168535385062
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 13647603684705292795
     Name: SkyboxMat
-    Shader: 15264161634246177025
-    Texture: 10185492720161273550
+    Shader: 15199800525330094966
+    Texture: 9630081752689673090
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 14681864413578990312
+    Name: Wood
+    Shader: 5
+    Texture: 9475367503929765801
+    MetallicTexture: 394982171619611931
+    RoughnessTexture: 2229786046129393866
+    NormalTexture: 10891541880090571305
+    AoTexture: 9216950761300535746
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: true
+    UseRoughness: true
+    UseNormal: true
+    UseAO: true
+  - Material: 4
+    Name: Default
+    Shader: 5
+    Texture: 6
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0

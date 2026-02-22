@@ -1,6 +1,111 @@
 Scene: Default
 Entities:
-  - Entity: 12010222633743584655
+  - Entity: 14503331648005097173
+    TagComponent:
+      Tag: Sphere
+    TransformComponent:
+      LocalPosition: [-1.8230562, 4.0127006, -19.306908]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 3
+    MaterialComponent:
+      MaterialID: 13525158331164125358
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    SphereColliderComponent:
+      Radius: 1
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      {}
+  - Entity: 14049151650971260788
+    TagComponent:
+      Tag: Directional Light
+    TransformComponent:
+      LocalPosition: [0, 12.764115, 0]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    DirLightComponent:
+      Ambient: [0.1, 0.1, 0.1]
+      isPrimary: true
+    RuntimeComponents:
+      {}
+  - Entity: 223334095999975092
+    TagComponent:
+      Tag: Scene Camera
+    TransformComponent:
+      LocalPosition: [1.0622853, 3.3607588, 1.1666843]
+      LocalRotation: [-0.12330284, 0.069220126, 0.008621198, 0.98991454]
+      LocalScale: [1, 1, 1]
+    SceneCameraComponent:
+      Aspect: 1.7738589
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 1000
+    RuntimeComponents:
+      {}
+  - Entity: 3400940699113693083
+    TagComponent:
+      Tag: Primary Camera
+    TransformComponent:
+      LocalPosition: [0, 2, 6.1782675]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    CameraComponent:
+      Aspect: 1.7777778
+      Fov: 1.0471976
+      Near: 0.1
+      Far: 1000
+      isPrimary: true
+    ParentComponent:
+      ParentID: 18374487008469851442
+    RuntimeComponents:
+      {}
+  - Entity: 18374487008469851442
+    TagComponent:
+      Tag: Player
+    TransformComponent:
+      LocalPosition: [-0.1794864, 0, -6.273856]
+      LocalRotation: [0, -0.18197954, 0, 0.9833023]
+      LocalScale: [0.9999995, 1, 0.9999996]
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 11200714315347614806
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: true
+      LockRotY: true
+      LockRotZ: true
+    BoxColliderComponent:
+      HalfExtents: [0.5, 0.5, 0.5]
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      Player:
+        health: 0
+        speed: 10
+        jumpImpulse: 1
+        rotationSpeed: 90
+  - Entity: 10760690516206778465
     TagComponent:
       Tag: Skybox
     TransformComponent:
@@ -10,25 +115,142 @@ Entities:
     MeshComponent:
       MeshID: 7
     SkyboxComponent:
-      SkyboxMaterialID: 9655217580260276702
-      EqMaterialID: 8046107614662401257
-      ConMaterialID: 1310146876374489572
-      PrefilterMaterialID: 5529682289898676789
-      BRDFLUTMaterialID: 4687583308344083754
+      SkyboxMaterialID: 13647603684705292795
+      EqMaterialID: 1524053275300966997
+      ConMaterialID: 17645378171573315776
+      PrefilterMaterialID: 11281537222902799020
+      BRDFLUTMaterialID: 10851310005603372183
       EnvGenerated: false
     RuntimeComponents:
       {}
-  - Entity: 12555377559408101129
+  - Entity: 17166644157397308457
     TagComponent:
       Tag: Cube
     TransformComponent:
-      LocalPosition: [0, 0, -5]
+      LocalPosition: [-0.50336957, -1.6316724, -4.8777905]
       LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
+      LocalScale: [151.84976, 1, 223.66888]
     MeshComponent:
       MeshID: 1
     MaterialComponent:
-      MaterialID: 4
+      MaterialID: 11759543862426804946
+    RigidBodyComponent:
+      MotionType: 0
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    BoxColliderComponent:
+      HalfExtents: [75.92488, 0.5, 111.83444]
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      {}
+  - Entity: 383763443456064701
+    TagComponent:
+      Tag: Sphere
+    TransformComponent:
+      LocalPosition: [-7.6301527, 3.732112, -18.826508]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 3
+    MaterialComponent:
+      MaterialID: 11200714315347614806
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    SphereColliderComponent:
+      Radius: 1
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      {}
+  - Entity: 1721588440608174854
+    TagComponent:
+      Tag: Sphere
+    TransformComponent:
+      LocalPosition: [6.0762997, 3.774936, -21.517136]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 3
+    MaterialComponent:
+      MaterialID: 14681864413578990312
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    SphereColliderComponent:
+      Radius: 1
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      {}
+  - Entity: 9338142695407500791
+    TagComponent:
+      Tag: SpinCube
+    TransformComponent:
+      LocalPosition: [-12.997561, -0.7055983, -17.141054]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [0.36856487, 1, 6.7562795]
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 14681864413578990312
+    RigidBodyComponent:
+      MotionType: 0
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    BoxColliderComponent:
+      HalfExtents: [0.18428244, 0.5, 3.3781397]
+      Offset: [0, 0, 0]
+      IsTrigger: false
+    RuntimeComponents:
+      Test:
+        test: 100
+  - Entity: 3830458722682015294
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      LocalPosition: [-3.4454815, 6.1771173, -35.51602]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 8.207377, 1]
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 13525158331164125358
     RigidBodyComponent:
       MotionType: 2
       Mass: 1
@@ -42,49 +264,37 @@ Entities:
       LockRotY: false
       LockRotZ: false
     BoxColliderComponent:
-      HalfExtents: [0.5, 0.5, 0.5]
+      HalfExtents: [0.5, 4.1036887, 0.5]
       Offset: [0, 0, 0]
       IsTrigger: false
     RuntimeComponents:
       {}
-  - Entity: 10141767879819826317
+  - Entity: 9895429167695538022
     TagComponent:
-      Tag: Primary Camera
+      Tag: Cube
     TransformComponent:
-      LocalPosition: [0, 0, 5]
+      LocalPosition: [-0.71880907, 0.21677935, -27.021347]
       LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
-    CameraComponent:
-      Aspect: 1.7777778
-      Fov: 1.0471976
-      Near: 0.1
-      Far: 100
-      isPrimary: true
-    RuntimeComponents:
-      {}
-  - Entity: 14321394820703040485
-    TagComponent:
-      Tag: Scene Camera
-    TransformComponent:
-      LocalPosition: [0.46489623, 0.038457636, -1.8807559]
-      LocalRotation: [0.02354165, 0.039248966, -0.00092495803, 0.99895173]
-      LocalScale: [1, 1, 1]
-    SceneCameraComponent:
-      Aspect: 1.7738589
-      Fov: 1.0471976
-      Near: 0.1
-      Far: 100
-    RuntimeComponents:
-      {}
-  - Entity: 14188627512497543247
-    TagComponent:
-      Tag: Directional Light
-    TransformComponent:
-      LocalPosition: [0, 0, 0]
-      LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
-    DirLightComponent:
-      Ambient: [0.1, 0.1, 0.1]
-      isPrimary: true
+      LocalScale: [12.187198, 1, 1]
+    MeshComponent:
+      MeshID: 1
+    MaterialComponent:
+      MaterialID: 13525158331164125358
+    RigidBodyComponent:
+      MotionType: 2
+      Mass: 1
+      LinearDamping: 0
+      AngularDamping: 0.05
+      AllowSleep: true
+      LockPosX: false
+      LockPosY: false
+      LockPosZ: false
+      LockRotX: false
+      LockRotY: false
+      LockRotZ: false
+    BoxColliderComponent:
+      HalfExtents: [6.093599, 0.5, 0.5]
+      Offset: [0, 0, 0]
+      IsTrigger: false
     RuntimeComponents:
       {}
