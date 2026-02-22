@@ -3,15 +3,15 @@ Meshes:
   - Mesh: 3
     Name: Sphere
     Path: /assets/meshes/3.bin
-  - Mesh: 2
-    Name: Quad
-    Path: /assets/meshes/2.bin
   - Mesh: 7
     Name: Skybox
     Path: /assets/meshes/7.bin
   - Mesh: 1
     Name: Cube
     Path: /assets/meshes/1.bin
+  - Mesh: 2
+    Name: Quad
+    Path: /assets/meshes/2.bin
 Textures:
   - Texture: 15348513318104086603
     Name: BRDF Map
@@ -66,11 +66,6 @@ Shaders:
     VertPath: /shaders/prefilter.vert
     FragPath: /shaders/prefilter.frag
     GeoPath: ""
-  - Shader: 8
-    Name: QuadShader
-    VertPath: /shaders/screenQuad.vert
-    FragPath: /shaders/screenQuad.frag
-    GeoPath: ""
   - Shader: 11025485668151516088
     Name: ""
     VertPath: /shaders/eq-to-cubemap.vert
@@ -90,6 +85,11 @@ Shaders:
     Name: PickingShader
     VertPath: /shaders/pickingShader.vert
     FragPath: /shaders/pickingShader.frag
+    GeoPath: ""
+  - Shader: 8
+    Name: QuadShader
+    VertPath: /shaders/screenQuad.vert
+    FragPath: /shaders/screenQuad.frag
     GeoPath: ""
   - Shader: 5266829478154036814
     Name: ""

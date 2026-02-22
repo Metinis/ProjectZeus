@@ -87,9 +87,8 @@ class MovementSystem : public ZEN::ISystem {
     }
 
     void onCollision(const ZEN::CollisionEvent& e) override {
-        for (auto entity : ZEN_GET_ENTITIES(Player)) {
-            if (auto* pc = entity.tryGetComponent<ZEN::PhysicsBodyComp>()) {
-                auto& tc = entity.getComponent<ZEN::TransformComp>();
+        if (e.A.hasRuntimeComponent("Player")) {
+            if (auto* pc = e.A.tryGetComponent<ZEN::PhysicsBodyComp>()) {
                 pc->addImpulse({0.0f, 2, 0.0f});
             }
         }
