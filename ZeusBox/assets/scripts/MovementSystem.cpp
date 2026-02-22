@@ -13,6 +13,7 @@ REGISTER_COMPONENT(Player,
 );
 
 class MovementSystem : public ZEN::ISystem {
+    bool m_isGrounded{false};
     ~MovementSystem() override = default;
 
     void onLoad(ZEN::Scene *scene) override {
@@ -69,8 +70,9 @@ class MovementSystem : public ZEN::ISystem {
                 pc->setVelocity({vel.x, pc->getVelocity().y, vel.z});
 
                 float jumpImpulse = ZEN_GET_FIELD(Player, entity, jumpImpulse);
-                if (ZEN::Input::isKeyPressed(ZEN::Key::Space)) {
+                if (ZEN::Input::isKeyPressed(ZEN::Key::Space) && m_isGrounded) {
                     pc->addImpulse({0.0f, jumpImpulse, 0.0f});
+                    m_isGrounded = false;
                 }
 
                 float rotDir = 0.0f;
@@ -86,12 +88,16 @@ class MovementSystem : public ZEN::ISystem {
         }
     }
 
-    void onCollision(const ZEN::CollisionEvent& e) override {
-        if (e.A.hasRuntimeComponent("Player")) {
-            if (auto* pc = e.A.tryGetComponent<ZEN::PhysicsBodyComp>()) {
-                pc->addImpulse({0.0f, 2, 0.0f});
-            }
+    void onCollisionEnter(const ZEN::CollisionEvent& e) override {
+        if (ZEN_HAS_COMP(Player, e.A)) {
+            m_isGrounded = true;
         }
+    }
+    void onCollisionStay(const ZEN::CollisionEvent &e) override {
+
+    }
+    void onCollisionExit(const ZEN::CollisionEvent& e) override {
+
     }
 
     void onUnload() override {

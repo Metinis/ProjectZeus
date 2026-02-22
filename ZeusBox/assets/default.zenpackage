@@ -3,15 +3,15 @@ Meshes:
   - Mesh: 3
     Name: Sphere
     Path: /assets/meshes/3.bin
+  - Mesh: 2
+    Name: Quad
+    Path: /assets/meshes/2.bin
   - Mesh: 7
     Name: Skybox
     Path: /assets/meshes/7.bin
   - Mesh: 1
     Name: Cube
     Path: /assets/meshes/1.bin
-  - Mesh: 2
-    Name: Quad
-    Path: /assets/meshes/2.bin
 Textures:
   - Texture: 15348513318104086603
     Name: BRDF Map
@@ -66,16 +66,6 @@ Shaders:
     VertPath: /shaders/prefilter.vert
     FragPath: /shaders/prefilter.frag
     GeoPath: ""
-  - Shader: 11025485668151516088
-    Name: ""
-    VertPath: /shaders/eq-to-cubemap.vert
-    FragPath: /shaders/eq-to-cubemap.frag
-    GeoPath: ""
-  - Shader: 9
-    Name: NormalsShader
-    VertPath: /shaders/normal-visual.vert
-    FragPath: /shaders/normal-visual.frag
-    GeoPath: /shaders/normal-visual.geom
   - Shader: 17499424903183173303
     Name: ""
     VertPath: /shaders/irradiance-con.vert
@@ -86,6 +76,16 @@ Shaders:
     VertPath: /shaders/pickingShader.vert
     FragPath: /shaders/pickingShader.frag
     GeoPath: ""
+  - Shader: 11025485668151516088
+    Name: ""
+    VertPath: /shaders/eq-to-cubemap.vert
+    FragPath: /shaders/eq-to-cubemap.frag
+    GeoPath: ""
+  - Shader: 9
+    Name: NormalsShader
+    VertPath: /shaders/normal-visual.vert
+    FragPath: /shaders/normal-visual.frag
+    GeoPath: /shaders/normal-visual.geom
   - Shader: 8
     Name: QuadShader
     VertPath: /shaders/screenQuad.vert
@@ -102,6 +102,24 @@ Shaders:
     FragPath: /shaders/pbr.frag
     GeoPath: ""
 Materials:
+  - Material: 6865372717247370617
+    Name: Mat2
+    Shader: 5
+    Texture: 6
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 0.27, 0]
+    Metallic: 0.11
+    Roughness: 0
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
   - Material: 13967350470391628125
     Name: BRDFMat
     Shader: 5266829478154036814
@@ -185,6 +203,24 @@ Materials:
     Albedo: [1, 1, 1]
     Metallic: 1
     Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 18295536075419831074
+    Name: Mat1
+    Shader: 5
+    Texture: 6
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [0.08, 0.36, 1]
+    Metallic: 0.28
+    Roughness: 0.25
     AO: 1
     Metal: false
     UseAlbedo: false

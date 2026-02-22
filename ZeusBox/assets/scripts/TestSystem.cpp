@@ -23,7 +23,18 @@ class TestSystem : public ZEN::ISystem {
             }
         }
     }
-    void onCollision(const ZEN::CollisionEvent& e) override {
+    void onCollisionEnter(const ZEN::CollisionEvent& e) override {ß
+        ZEN::Entity entityB = e.B;
+        if (ZEN_HAS_COMP(Test, e.A) && e.B.hasComponent<ZEN::PhysicsBodyComp>()) {
+            auto pb = entityB.getComponent<ZEN::PhysicsBodyComp>();
+            glm::vec3 impulse = -e.contactNormal * 50.0f;
+            pb.addImpulse(impulse);
+        }
+    }
+    void onCollisionStay(const ZEN::CollisionEvent &e) override {
+
+    }
+    void onCollisionExit(const ZEN::CollisionEvent& e) override {
 
     }
     void onUnload() override {
