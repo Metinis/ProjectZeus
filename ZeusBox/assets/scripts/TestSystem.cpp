@@ -23,7 +23,7 @@ class TestSystem : public ZEN::ISystem {
             }
         }
     }
-    void onCollisionEnter(const ZEN::CollisionEvent& e) override {ß
+    void onCollisionEnter(const ZEN::CollisionEvent& e) override {
         ZEN::Entity entityB = e.B;
         if (ZEN_HAS_COMP(Test, e.A) && e.B.hasComponent<ZEN::PhysicsBodyComp>()) {
             auto pb = entityB.getComponent<ZEN::PhysicsBodyComp>();
