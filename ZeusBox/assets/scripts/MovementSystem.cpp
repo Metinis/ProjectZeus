@@ -65,9 +65,12 @@ class MovementSystem : public ZEN::ISystem {
                 if (glm::length(moveDir) > 0.0f)
                     moveDir = glm::normalize(moveDir);
                 float speed = ZEN_GET_FIELD(Player, entity, speed);
-                vel.x = moveDir.x * speed;
-                vel.z = moveDir.z * speed;
-                pc->setVelocity({vel.x, pc->getVelocity().y, vel.z});
+                glm::vec3 currentVel = pc->getVelocity();
+
+                glm::vec3 inputVel = moveDir * speed;
+                currentVel.x = inputVel.x;
+                currentVel.z = inputVel.z;
+                pc->setVelocity(currentVel);
 
                 float jumpImpulse = ZEN_GET_FIELD(Player, entity, jumpImpulse);
                 if (ZEN::Input::isKeyPressed(ZEN::Key::Space) && m_isGrounded) {

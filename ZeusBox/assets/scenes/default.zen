@@ -1,16 +1,91 @@
 Scene: Default
 Entities:
-  - Entity: 11672478124840450385
+  - Entity: 1795850310533334412
     TagComponent:
-      Tag: Cube
+      Tag: part10_part10_0
     TransformComponent:
-      LocalPosition: [-7.593116, -0.5887679, -7.0304956]
+      LocalPosition: [0, 0, -5]
       LocalRotation: [0, 0, 0, 1]
-      LocalScale: [0.41476652, 1, 8.514662]
+      LocalScale: [1, 1, 1]
     MeshComponent:
-      MeshID: 1
+      MeshID: 4090531711247529196
     MaterialComponent:
-      MaterialID: 4
+      MaterialID: 8992643093369375535
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 64358614904492957
+    TagComponent:
+      Tag: part9_part9_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 9394919308510687625
+    MaterialComponent:
+      MaterialID: 12272571864336511204
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 7987075161783173103
+    TagComponent:
+      Tag: part8_part8_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 12809965482023243044
+    MaterialComponent:
+      MaterialID: 11666001093390404591
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 15994549181277299130
+    TagComponent:
+      Tag: part7_part7_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 13303293667084973833
+    MaterialComponent:
+      MaterialID: 2545993660053569947
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 8740646325481387087
+    TagComponent:
+      Tag: part6_part6_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 12711596851548001143
+    MaterialComponent:
+      MaterialID: 1441085914839101867
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 17836550935324668523
+    TagComponent:
+      Tag: part5_part5_0
+    TransformComponent:
+      LocalPosition: [0, 0, -10]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 15611976420971153180
+    MaterialComponent:
+      MaterialID: 10958782273207875952
     RigidBodyComponent:
       MotionType: 0
       Mass: 1
@@ -23,14 +98,93 @@ Entities:
       LockRotX: false
       LockRotY: false
       LockRotZ: false
-    BoxColliderComponent:
-      HalfExtents: [0.20738326, 0.5, 4.257331]
-      Offset: [0, 0, 0]
-      IsTrigger: false
     RuntimeComponents:
-      Test:
-        test: 90
-  - Entity: 2159001201086514582
+      {}
+  - Entity: 5643135252324956759
+    TagComponent:
+      Tag: part4_part4_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 15400592552228278678
+    MaterialComponent:
+      MaterialID: 5670217309296317537
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 10646371831037612978
+    TagComponent:
+      Tag: part3_part3_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 6270131685048485689
+    MaterialComponent:
+      MaterialID: 4761974586180358202
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 15261641681970993439
+    TagComponent:
+      Tag: part2_part2_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 2671569249682143774
+    MaterialComponent:
+      MaterialID: 8166603718021043746
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 16416722093238052167
+    TagComponent:
+      Tag: part1_part1_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 7754432537825854660
+    MaterialComponent:
+      MaterialID: 16513952937215808045
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 652326384395350081
+    TagComponent:
+      Tag: part11_part11_0
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    MeshComponent:
+      MeshID: 1030499882182594119
+    MaterialComponent:
+      MaterialID: 10536698790569177529
+    ParentComponent:
+      ParentID: 8961842219470956323
+    RuntimeComponents:
+      {}
+  - Entity: 8961842219470956323
+    TagComponent:
+      Tag: de_dust_2_with_real_light
+    TransformComponent:
+      LocalPosition: [0, 0, -5]
+      LocalRotation: [0, 0, 0, 1]
+      LocalScale: [1, 1, 1]
+    RuntimeComponents:
+      {}
+  - Entity: 2012100949500094020
     TagComponent:
       Tag: Skybox
     TransformComponent:
@@ -40,25 +194,25 @@ Entities:
     MeshComponent:
       MeshID: 7
     SkyboxComponent:
-      SkyboxMaterialID: 6646518424836802475
-      EqMaterialID: 8605963751530610889
-      ConMaterialID: 12278837401615726125
-      PrefilterMaterialID: 2294533696358966794
-      BRDFLUTMaterialID: 13967350470391628125
+      SkyboxMaterialID: 684643202802070360
+      EqMaterialID: 1518598506561217941
+      ConMaterialID: 3963762132455980489
+      PrefilterMaterialID: 2019840372283326810
+      BRDFLUTMaterialID: 8605405945658123351
       EnvGenerated: false
     RuntimeComponents:
       {}
-  - Entity: 4920190722362736977
+  - Entity: 17965181944763700044
     TagComponent:
       Tag: Cube
     TransformComponent:
-      LocalPosition: [4.9142885, 0, -5]
+      LocalPosition: [-6.3926287, 3.3335724, 1.154886]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
     MeshComponent:
       MeshID: 1
     MaterialComponent:
-      MaterialID: 6865372717247370617
+      MaterialID: 4
     RigidBodyComponent:
       MotionType: 2
       Mass: 1
@@ -78,14 +232,14 @@ Entities:
     RuntimeComponents:
       Player:
         health: 0
-        speed: 20
+        speed: 10
         jumpImpulse: 10
-        rotationSpeed: 200
-  - Entity: 17060300599225672372
+        rotationSpeed: 90
+  - Entity: 9691842554684642391
     TagComponent:
       Tag: Primary Camera
     TransformComponent:
-      LocalPosition: [0, 2, 10]
+      LocalPosition: [0, 0.9529462, 3.4226682]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
     CameraComponent:
@@ -95,15 +249,15 @@ Entities:
       Far: 100
       isPrimary: true
     ParentComponent:
-      ParentID: 4920190722362736977
+      ParentID: 17965181944763700044
     RuntimeComponents:
       {}
-  - Entity: 6739040290010937024
+  - Entity: 18020729143524599685
     TagComponent:
       Tag: Scene Camera
     TransformComponent:
-      LocalPosition: [-1.2708308, 3.608959, 1.5442713]
-      LocalRotation: [-0.21228896, -0.11904955, -0.026065618, 0.9695779]
+      LocalPosition: [-0.8545118, 12.052214, 5.938411]
+      LocalRotation: [-0.40185073, 0.29905874, 0.14072628, 0.8539766]
       LocalScale: [1, 1, 1]
     SceneCameraComponent:
       Aspect: 1.7738589
@@ -112,73 +266,15 @@ Entities:
       Far: 100
     RuntimeComponents:
       {}
-  - Entity: 7098203593802908909
+  - Entity: 4909897909351676104
     TagComponent:
       Tag: Directional Light
     TransformComponent:
-      LocalPosition: [0, 10, 0]
+      LocalPosition: [0, 0, 0]
       LocalRotation: [0, 0, 0, 1]
       LocalScale: [1, 1, 1]
     DirLightComponent:
       Ambient: [0.1, 0.1, 0.1]
       isPrimary: true
-    RuntimeComponents:
-      {}
-  - Entity: 3411191682383593034
-    TagComponent:
-      Tag: Cube
-    TransformComponent:
-      LocalPosition: [-1.7835342, -1.6719447, -5.23892]
-      LocalRotation: [0, 0, 0, 1]
-      LocalScale: [81.33195, 1, 208.72408]
-    MeshComponent:
-      MeshID: 1
-    MaterialComponent:
-      MaterialID: 18295536075419831074
-    RigidBodyComponent:
-      MotionType: 0
-      Mass: 1
-      LinearDamping: 0
-      AngularDamping: 0.05
-      AllowSleep: true
-      LockPosX: false
-      LockPosY: false
-      LockPosZ: false
-      LockRotX: false
-      LockRotY: false
-      LockRotZ: false
-    BoxColliderComponent:
-      HalfExtents: [40.665974, 0.5, 104.36204]
-      Offset: [0, 0, 0]
-      IsTrigger: false
-    RuntimeComponents:
-      {}
-  - Entity: 6465918116033910282
-    TagComponent:
-      Tag: Cube
-    TransformComponent:
-      LocalPosition: [1.9452177, 0.61880803, -5.3054914]
-      LocalRotation: [0, 0, 0, 1]
-      LocalScale: [1, 1, 1]
-    MeshComponent:
-      MeshID: 1
-    MaterialComponent:
-      MaterialID: 4
-    RigidBodyComponent:
-      MotionType: 2
-      Mass: 1
-      LinearDamping: 0
-      AngularDamping: 0.05
-      AllowSleep: true
-      LockPosX: false
-      LockPosY: false
-      LockPosZ: false
-      LockRotX: false
-      LockRotY: false
-      LockRotZ: false
-    BoxColliderComponent:
-      HalfExtents: [0.5, 0.5, 0.5]
-      Offset: [0, 0, 0]
-      IsTrigger: false
     RuntimeComponents:
       {}

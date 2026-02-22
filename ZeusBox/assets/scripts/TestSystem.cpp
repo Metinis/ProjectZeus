@@ -24,10 +24,10 @@ class TestSystem : public ZEN::ISystem {
         }
     }
     void onCollisionEnter(const ZEN::CollisionEvent& e) override {
-        ZEN::Entity entityB = e.B;
-        if (ZEN_HAS_COMP(Test, e.A) && e.B.hasComponent<ZEN::PhysicsBodyComp>()) {
-            auto pb = entityB.getComponent<ZEN::PhysicsBodyComp>();
-            glm::vec3 impulse = -e.contactNormal * 50.0f;
+        ZEN::Entity entityA = e.A;
+        if (ZEN_HAS_COMP(Test, e.B) && e.A.hasComponent<ZEN::PhysicsBodyComp>()) {
+            auto& pb = entityA.getComponent<ZEN::PhysicsBodyComp>();
+            glm::vec3 impulse = -e.contactNormal * 100.0f;
             pb.addImpulse(impulse);
         }
     }
