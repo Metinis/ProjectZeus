@@ -36,12 +36,12 @@ Meshes:
   - Mesh: 18228867795812111109
     Name: defaultMaterial
     Path: /assets/meshes/18228867795812111109.bin
-  - Mesh: 6878130063348520325
-    Name: part4_part4_0
-    Path: /assets/meshes/6878130063348520325.bin
   - Mesh: 2
     Name: Quad
     Path: /assets/meshes/2.bin
+  - Mesh: 6878130063348520325
+    Name: part4_part4_0
+    Path: /assets/meshes/6878130063348520325.bin
   - Mesh: 3546871286146299310
     Name: part3_part3_0
     Path: /assets/meshes/3546871286146299310.bin
@@ -177,14 +177,6 @@ Textures:
     Size: 0
     AbsPath: false
     Dimensions: [0, 0]
-  - Texture: 8298532141874392783
-    Name: ""
-    Path: /assets/textures/8298532141874392783.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 987753
-    AbsPath: false
-    Dimensions: [987753, 0]
   - Texture: 15447657610073996718
     Name: ""
     Path: /assets/textures/15447657610073996718.bin
@@ -193,6 +185,14 @@ Textures:
     Size: 858304
     AbsPath: false
     Dimensions: [858304, 0]
+  - Texture: 8298532141874392783
+    Name: ""
+    Path: /assets/textures/8298532141874392783.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 987753
+    AbsPath: false
+    Dimensions: [987753, 0]
   - Texture: 14219241753645325649
     Name: ""
     Path: /assets/textures/14219241753645325649.bin
@@ -225,30 +225,30 @@ Shaders:
     VertPath: /shaders/prefilter.vert
     FragPath: /shaders/prefilter.frag
     GeoPath: ""
-  - Shader: 8
-    Name: QuadShader
-    VertPath: /shaders/screenQuad.vert
-    FragPath: /shaders/screenQuad.frag
+  - Shader: 10
+    Name: PickingShader
+    VertPath: /shaders/pickingShader.vert
+    FragPath: /shaders/pickingShader.frag
     GeoPath: ""
   - Shader: 5
     Name: Default
     VertPath: /shaders/pbr.vert
     FragPath: /shaders/pbr.frag
     GeoPath: ""
-  - Shader: 10
-    Name: PickingShader
-    VertPath: /shaders/pickingShader.vert
-    FragPath: /shaders/pickingShader.frag
+  - Shader: 9183411380170158844
+    Name: ""
+    VertPath: /shaders/glskyboxHDR.vert
+    FragPath: /shaders/glskyboxHDR.frag
     GeoPath: ""
   - Shader: 9
     Name: NormalsShader
     VertPath: /shaders/normal-visual.vert
     FragPath: /shaders/normal-visual.frag
     GeoPath: /shaders/normal-visual.geom
-  - Shader: 9183411380170158844
-    Name: ""
-    VertPath: /shaders/glskyboxHDR.vert
-    FragPath: /shaders/glskyboxHDR.frag
+  - Shader: 8
+    Name: QuadShader
+    VertPath: /shaders/screenQuad.vert
+    FragPath: /shaders/screenQuad.frag
     GeoPath: ""
   - Shader: 326274957222802488
     Name: ""
