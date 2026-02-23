@@ -10,3 +10,6 @@ struct Player {
 struct Test {
     float test;
 };
+struct CameraMov {
+    float sensitivity;
+};

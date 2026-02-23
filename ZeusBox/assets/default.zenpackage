@@ -1,171 +1,54 @@
 Assets: Default
 Meshes:
-  - Mesh: 7842940629723490063
-    Name: part2_part2_0
-    Path: /assets/meshes/7842940629723490063.bin
+  - Mesh: 3
+    Name: Sphere
+    Path: /assets/meshes/3.bin
+  - Mesh: 7
+    Name: Skybox
+    Path: /assets/meshes/7.bin
   - Mesh: 14785566747809854311
     Name: part9_part9_0
     Path: /assets/meshes/14785566747809854311.bin
   - Mesh: 4606425493312033562
     Name: part5_part5_0
     Path: /assets/meshes/4606425493312033562.bin
-  - Mesh: 16188346370379098889
-    Name: part7_part7_0
-    Path: /assets/meshes/16188346370379098889.bin
-  - Mesh: 13856928308158474943
-    Name: part11_part11_0
-    Path: /assets/meshes/13856928308158474943.bin
-  - Mesh: 4412857852144669335
-    Name: part1_part1_0
-    Path: /assets/meshes/4412857852144669335.bin
-  - Mesh: 6273104318436446994
-    Name: part6_part6_0
-    Path: /assets/meshes/6273104318436446994.bin
-  - Mesh: 169276550822426086
-    Name: part8_part8_0
-    Path: /assets/meshes/169276550822426086.bin
+  - Mesh: 7842940629723490063
+    Name: part2_part2_0
+    Path: /assets/meshes/7842940629723490063.bin
   - Mesh: 10780751587879222726
     Name: part10_part10_0
     Path: /assets/meshes/10780751587879222726.bin
-  - Mesh: 3546871286146299310
-    Name: part3_part3_0
-    Path: /assets/meshes/3546871286146299310.bin
+  - Mesh: 169276550822426086
+    Name: part8_part8_0
+    Path: /assets/meshes/169276550822426086.bin
+  - Mesh: 6273104318436446994
+    Name: part6_part6_0
+    Path: /assets/meshes/6273104318436446994.bin
+  - Mesh: 4412857852144669335
+    Name: part1_part1_0
+    Path: /assets/meshes/4412857852144669335.bin
+  - Mesh: 13856928308158474943
+    Name: part11_part11_0
+    Path: /assets/meshes/13856928308158474943.bin
+  - Mesh: 16188346370379098889
+    Name: part7_part7_0
+    Path: /assets/meshes/16188346370379098889.bin
+  - Mesh: 18228867795812111109
+    Name: defaultMaterial
+    Path: /assets/meshes/18228867795812111109.bin
   - Mesh: 6878130063348520325
     Name: part4_part4_0
     Path: /assets/meshes/6878130063348520325.bin
-  - Mesh: 7
-    Name: Skybox
-    Path: /assets/meshes/7.bin
-  - Mesh: 3
-    Name: Sphere
-    Path: /assets/meshes/3.bin
   - Mesh: 2
     Name: Quad
     Path: /assets/meshes/2.bin
+  - Mesh: 3546871286146299310
+    Name: part3_part3_0
+    Path: /assets/meshes/3546871286146299310.bin
   - Mesh: 1
     Name: Cube
     Path: /assets/meshes/1.bin
 Textures:
-  - Texture: 9122005155187576830
-    Name: ""
-    Path: /assets/textures/9122005155187576830.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 786774
-    AbsPath: false
-    Dimensions: [786774, 0]
-  - Texture: 1202148877000543234
-    Name: Prefilter Map
-    Path: ""
-    Type: Prefilter
-    Mip: false
-    Size: 0
-    AbsPath: false
-    Dimensions: [128, 128]
-  - Texture: 10416409719824940275
-    Name: ""
-    Path: /assets/textures/10416409719824940275.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 716592
-    AbsPath: false
-    Dimensions: [716592, 0]
-  - Texture: 16785083837541939177
-    Name: BRDF Map
-    Path: ""
-    Type: BRDF
-    Mip: false
-    Size: 0
-    AbsPath: false
-    Dimensions: [1024, 1024]
-  - Texture: 18152021846763392122
-    Name: ""
-    Path: /assets/textures/18152021846763392122.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 993423
-    AbsPath: false
-    Dimensions: [993423, 0]
-  - Texture: 4006975348335320575
-    Name: ""
-    Path: /assets/textures/4006975348335320575.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 1023374
-    AbsPath: false
-    Dimensions: [1023374, 0]
-  - Texture: 17978422550878707046
-    Name: ""
-    Path: /assets/textures/17978422550878707046.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 872257
-    AbsPath: false
-    Dimensions: [872257, 0]
-  - Texture: 17649817984729789870
-    Name: ""
-    Path: /assets/textures/17649817984729789870.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 961989
-    AbsPath: false
-    Dimensions: [961989, 0]
-  - Texture: 14161841791603595403
-    Name: HDRTex
-    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
-    Type: HDR
-    Mip: false
-    Size: 0
-    AbsPath: false
-    Dimensions: [0, 0]
-  - Texture: 14219241753645325649
-    Name: ""
-    Path: /assets/textures/14219241753645325649.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 893999
-    AbsPath: false
-    Dimensions: [893999, 0]
-  - Texture: 15447657610073996718
-    Name: ""
-    Path: /assets/textures/15447657610073996718.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 858304
-    AbsPath: false
-    Dimensions: [858304, 0]
-  - Texture: 8298532141874392783
-    Name: ""
-    Path: /assets/textures/8298532141874392783.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 987753
-    AbsPath: false
-    Dimensions: [987753, 0]
-  - Texture: 4335635466739443974
-    Name: Skybox
-    Path: ""
-    Type: CubemapHDR
-    Mip: true
-    Size: 0
-    AbsPath: false
-    Dimensions: [1024, 1024]
-  - Texture: 1706802151729010460
-    Name: Convuluted Map
-    Path: ""
-    Type: CubemapHDR
-    Mip: false
-    Size: 0
-    AbsPath: false
-    Dimensions: [32, 32]
-  - Texture: 1893717612631239312
-    Name: ""
-    Path: /assets/textures/1893717612631239312.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 780414
-    AbsPath: false
-    Dimensions: [780414, 0]
   - Texture: 3192581640756568707
     Name: ""
     Path: /assets/textures/3192581640756568707.bin
@@ -174,6 +57,150 @@ Textures:
     Size: 846135
     AbsPath: false
     Dimensions: [846135, 0]
+  - Texture: 1893717612631239312
+    Name: ""
+    Path: /assets/textures/1893717612631239312.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 780414
+    AbsPath: false
+    Dimensions: [780414, 0]
+  - Texture: 1706802151729010460
+    Name: Convuluted Map
+    Path: ""
+    Type: CubemapHDR
+    Mip: false
+    Size: 0
+    AbsPath: false
+    Dimensions: [32, 32]
+  - Texture: 4335635466739443974
+    Name: Skybox
+    Path: ""
+    Type: CubemapHDR
+    Mip: true
+    Size: 0
+    AbsPath: false
+    Dimensions: [1024, 1024]
+  - Texture: 17649817984729789870
+    Name: ""
+    Path: /assets/textures/17649817984729789870.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 961989
+    AbsPath: false
+    Dimensions: [961989, 0]
+  - Texture: 17978422550878707046
+    Name: ""
+    Path: /assets/textures/17978422550878707046.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 872257
+    AbsPath: false
+    Dimensions: [872257, 0]
+  - Texture: 4006975348335320575
+    Name: ""
+    Path: /assets/textures/4006975348335320575.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 1023374
+    AbsPath: false
+    Dimensions: [1023374, 0]
+  - Texture: 18152021846763392122
+    Name: ""
+    Path: /assets/textures/18152021846763392122.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 993423
+    AbsPath: false
+    Dimensions: [993423, 0]
+  - Texture: 16785083837541939177
+    Name: BRDF Map
+    Path: ""
+    Type: BRDF
+    Mip: false
+    Size: 0
+    AbsPath: false
+    Dimensions: [1024, 1024]
+  - Texture: 10416409719824940275
+    Name: ""
+    Path: /assets/textures/10416409719824940275.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 716592
+    AbsPath: false
+    Dimensions: [716592, 0]
+  - Texture: 1202148877000543234
+    Name: Prefilter Map
+    Path: ""
+    Type: Prefilter
+    Mip: false
+    Size: 0
+    AbsPath: false
+    Dimensions: [128, 128]
+  - Texture: 9122005155187576830
+    Name: ""
+    Path: /assets/textures/9122005155187576830.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 786774
+    AbsPath: false
+    Dimensions: [786774, 0]
+  - Texture: 14272635966699237818
+    Name: ""
+    Path: /assets/textures/14272635966699237818.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 285429
+    AbsPath: false
+    Dimensions: [285429, 0]
+  - Texture: 5073558421277115520
+    Name: ""
+    Path: /assets/textures/5073558421277115520.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 1005786
+    AbsPath: false
+    Dimensions: [1005786, 0]
+  - Texture: 12954764432786496274
+    Name: ""
+    Path: /assets/textures/12954764432786496274.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 1543885
+    AbsPath: false
+    Dimensions: [1543885, 0]
+  - Texture: 14161841791603595403
+    Name: HDRTex
+    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
+    Type: HDR
+    Mip: false
+    Size: 0
+    AbsPath: false
+    Dimensions: [0, 0]
+  - Texture: 8298532141874392783
+    Name: ""
+    Path: /assets/textures/8298532141874392783.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 987753
+    AbsPath: false
+    Dimensions: [987753, 0]
+  - Texture: 15447657610073996718
+    Name: ""
+    Path: /assets/textures/15447657610073996718.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 858304
+    AbsPath: false
+    Dimensions: [858304, 0]
+  - Texture: 14219241753645325649
+    Name: ""
+    Path: /assets/textures/14219241753645325649.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 893999
+    AbsPath: false
+    Dimensions: [893999, 0]
   - Texture: 6
     Name: Default
     Path: ""
@@ -183,40 +210,20 @@ Textures:
     AbsPath: false
     Dimensions: [0, 0]
 Shaders:
-  - Shader: 13804908399076716620
+  - Shader: 6900930923653345749
     Name: ""
-    VertPath: /shaders/prefilter.vert
-    FragPath: /shaders/prefilter.frag
-    GeoPath: ""
-  - Shader: 326274957222802488
-    Name: ""
-    VertPath: /shaders/irradiance-con.vert
-    FragPath: /shaders/irradiance-con.frag
+    VertPath: /shaders/eq-to-cubemap.vert
+    FragPath: /shaders/eq-to-cubemap.frag
     GeoPath: ""
   - Shader: 952348976798506850
     Name: ""
     VertPath: /shaders/brdf-con.vert
     FragPath: /shaders/brdf-con.frag
     GeoPath: ""
-  - Shader: 6900930923653345749
+  - Shader: 13804908399076716620
     Name: ""
-    VertPath: /shaders/eq-to-cubemap.vert
-    FragPath: /shaders/eq-to-cubemap.frag
-    GeoPath: ""
-  - Shader: 9183411380170158844
-    Name: ""
-    VertPath: /shaders/glskyboxHDR.vert
-    FragPath: /shaders/glskyboxHDR.frag
-    GeoPath: ""
-  - Shader: 9
-    Name: NormalsShader
-    VertPath: /shaders/normal-visual.vert
-    FragPath: /shaders/normal-visual.frag
-    GeoPath: /shaders/normal-visual.geom
-  - Shader: 10
-    Name: PickingShader
-    VertPath: /shaders/pickingShader.vert
-    FragPath: /shaders/pickingShader.frag
+    VertPath: /shaders/prefilter.vert
+    FragPath: /shaders/prefilter.frag
     GeoPath: ""
   - Shader: 8
     Name: QuadShader
@@ -228,7 +235,135 @@ Shaders:
     VertPath: /shaders/pbr.vert
     FragPath: /shaders/pbr.frag
     GeoPath: ""
+  - Shader: 10
+    Name: PickingShader
+    VertPath: /shaders/pickingShader.vert
+    FragPath: /shaders/pickingShader.frag
+    GeoPath: ""
+  - Shader: 9
+    Name: NormalsShader
+    VertPath: /shaders/normal-visual.vert
+    FragPath: /shaders/normal-visual.frag
+    GeoPath: /shaders/normal-visual.geom
+  - Shader: 9183411380170158844
+    Name: ""
+    VertPath: /shaders/glskyboxHDR.vert
+    FragPath: /shaders/glskyboxHDR.frag
+    GeoPath: ""
+  - Shader: 326274957222802488
+    Name: ""
+    VertPath: /shaders/irradiance-con.vert
+    FragPath: /shaders/irradiance-con.frag
+    GeoPath: ""
 Materials:
+  - Material: 8690061525642477703
+    Name: part7
+    Shader: 5
+    Texture: 17649817984729789870
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 7477062395380237800
+    Name: part10
+    Shader: 5
+    Texture: 3192581640756568707
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 6640578177782855968
+    Name: part11
+    Shader: 5
+    Texture: 14219241753645325649
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 8162119989900550063
+    Name: SkyboxMat
+    Shader: 9183411380170158844
+    Texture: 4335635466739443974
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 881528116524137097
+    Name: BRDFMat
+    Shader: 952348976798506850
+    Texture: 16785083837541939177
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 2152524996830200178
+    Name: EqMat
+    Shader: 6900930923653345749
+    Texture: 14161841791603595403
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
   - Material: 13512432072775061657
     Name: PrefilterMat
     Shader: 13804908399076716620
@@ -243,6 +378,78 @@ Materials:
     AO: 1
     Metal: false
     UseAlbedo: false
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 6688826410264733910
+    Name: material
+    Shader: 5
+    Texture: 14272635966699237818
+    MetallicTexture: 12954764432786496274
+    RoughnessTexture: 12954764432786496274
+    NormalTexture: 5073558421277115520
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: true
+    UseRoughness: true
+    UseNormal: true
+    UseAO: false
+  - Material: 15111805484727712016
+    Name: part5
+    Shader: 5
+    Texture: 17978422550878707046
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 6228986560325982340
+    Name: part4
+    Shader: 5
+    Texture: 4006975348335320575
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 13843786669597410214
+    Name: part1
+    Shader: 5
+    Texture: 8298532141874392783
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
     UseMetallic: false
     UseRoughness: false
     UseNormal: false
@@ -283,118 +490,10 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 2152524996830200178
-    Name: EqMat
-    Shader: 6900930923653345749
-    Texture: 14161841791603595403
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 15111805484727712016
-    Name: part5
+  - Material: 4103707965518002541
+    Name: part2
     Shader: 5
-    Texture: 17978422550878707046
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 881528116524137097
-    Name: BRDFMat
-    Shader: 952348976798506850
-    Texture: 16785083837541939177
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 8162119989900550063
-    Name: SkyboxMat
-    Shader: 9183411380170158844
-    Texture: 4335635466739443974
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: false
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 6640578177782855968
-    Name: part11
-    Shader: 5
-    Texture: 14219241753645325649
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 7477062395380237800
-    Name: part10
-    Shader: 5
-    Texture: 3192581640756568707
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 8690061525642477703
-    Name: part7
-    Shader: 5
-    Texture: 17649817984729789870
+    Texture: 10416409719824940275
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
@@ -427,64 +526,10 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 4103707965518002541
-    Name: part2
-    Shader: 5
-    Texture: 10416409719824940275
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 13843786669597410214
-    Name: part1
-    Shader: 5
-    Texture: 8298532141874392783
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
   - Material: 12826605344784635879
     Name: part3
     Shader: 5
     Texture: 18152021846763392122
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 6228986560325982340
-    Name: part4
-    Shader: 5
-    Texture: 4006975348335320575
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0

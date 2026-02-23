@@ -6,14 +6,15 @@
 #include "components/Components.h"
 
 REGISTER_COMPONENT(Player,
-    FIELD(Player, health),
-    FIELD(Player, speed),
-    FIELD(Player, jumpImpulse),
-    FIELD(Player, rotationSpeed)
+                   FIELD(Player, health),
+                   FIELD(Player, speed),
+                   FIELD(Player, jumpImpulse),
+                   FIELD(Player, rotationSpeed)
 );
 
 class MovementSystem : public ZEN::ISystem {
     bool m_isGrounded{false};
+
     ~MovementSystem() override = default;
 
     void onLoad(ZEN::Scene *scene) override {
@@ -25,30 +26,13 @@ class MovementSystem : public ZEN::ISystem {
         ISystem::onLoad(scene);
     }
 
-    void updateMovement(float dt) {
-        glm::vec3 dir(0.0f);
-        if (ZEN::Input::isKeyPressed(ZEN::Key::W)) dir.z -= 1.0f;
-        if (ZEN::Input::isKeyPressed(ZEN::Key::S)) dir.z += 1.0f;
-        if (ZEN::Input::isKeyPressed(ZEN::Key::A)) dir.x -= 1.0f;
-        if (ZEN::Input::isKeyPressed(ZEN::Key::D)) dir.x += 1.0f;
-        if (ZEN::Input::isKeyPressed(ZEN::Key::Space)) dir.y += 1.0f;
-        if (ZEN::Input::isKeyPressed(ZEN::Key::LeftShift)) dir.y -= 1.0f;
-        if (glm::length(dir) > 0.0f) dir = glm::normalize(dir);
-
-        if (glm::length(dir) == 0.0f) return;
-
-        /*for (auto entityHandle : ZEN_GET_ENTITIES(Player)) {
-            ZEN::Entity entity(m_Scene, entityHandle);
-            float speed = ZEN_GET_FIELD(Player, entity, speed);
-            entity.getComponent<ZEN::TransformComp>().localPosition += dir * dt * speed;
-        }*/
-    }
-
     void onUpdate(float dt) override {
-        //updateMovement(dt);
-        for (auto entity : ZEN_GET_ENTITIES(Player)) {
-            if (auto* pc = entity.tryGetComponent<ZEN::PhysicsBodyComp>()) {
-                auto& tc = entity.getComponent<ZEN::TransformComp>();
+        if (ZEN::Input::isKeyPressed(ZEN::Key::Escape)) {
+            ZEN::Input::setMouseLock(false);
+        }
+        for (auto entity: ZEN_GET_ENTITIES(Player)) {
+            if (auto *pc = entity.tryGetComponent<ZEN::PhysicsBodyComp>()) {
+                auto &tc = entity.getComponent<ZEN::TransformComp>();
                 glm::vec3 vel = pc->getVelocity();
 
                 float moveX = 0.0f;
@@ -60,10 +44,11 @@ class MovementSystem : public ZEN::ISystem {
                 if (ZEN::Input::isKeyPressed(ZEN::Key::D)) moveX += 1.0f;
 
                 glm::vec3 forward = glm::normalize(glm::vec3(tc.worldMatrix[2]));
-                glm::vec3 right   = glm::normalize(glm::vec3(tc.worldMatrix[0]));
+                glm::vec3 right = glm::normalize(glm::vec3(tc.worldMatrix[0]));
                 glm::vec3 moveDir = forward * moveZ + right * moveX;
                 if (glm::length(moveDir) > 0.0f)
                     moveDir = glm::normalize(moveDir);
+
                 float speed = ZEN_GET_FIELD(Player, entity, speed);
                 glm::vec3 currentVel = pc->getVelocity();
 
@@ -76,35 +61,25 @@ class MovementSystem : public ZEN::ISystem {
                 if (ZEN::Input::isKeyPressed(ZEN::Key::Space) && m_isGrounded) {
                     pc->addImpulse({0.0f, jumpImpulse, 0.0f});
                     m_isGrounded = false;
-                }
 
-                float rotDir = 0.0f;
-                if (ZEN::Input::isKeyPressed(ZEN::Key::Left)) {
-                    rotDir += 1.0f;
                 }
-                if (ZEN::Input::isKeyPressed(ZEN::Key::Right)) {
-                    rotDir -= 1.0f;
-                }
-                float rotationSpeed = ZEN_GET_FIELD(Player, entity, rotationSpeed);
-                pc->rotate(glm::vec3(0.0f, 1.0f, 0.0f), rotDir * glm::radians(rotationSpeed) * dt);
             }
         }
     }
 
-    void onCollisionEnter(const ZEN::CollisionEvent& e) override {
+    void onCollisionEnter(const ZEN::CollisionEvent &e) override {
         if (ZEN_HAS_COMP(Player, e.A)) {
             m_isGrounded = true;
         }
     }
+
     void onCollisionStay(const ZEN::CollisionEvent &e) override {
-
     }
-    void onCollisionExit(const ZEN::CollisionEvent& e) override {
 
+    void onCollisionExit(const ZEN::CollisionEvent &e) override {
     }
 
     void onUnload() override {
-
     }
 };
 
