@@ -103,11 +103,11 @@ Entities:
     TagComponent:
       Tag: Scene Camera
     TransformComponent:
-      LocalPosition: [-18.59782, 4.2631803, 3.2615721]
-      LocalRotation: [0.044680044, -0.58124566, -0.031988174, -0.81187063]
+      LocalPosition: [-9.1520195, 4.438943, 3.040425]
+      LocalRotation: [0.032679535, -0.81583196, -0.04632669, -0.57550347]
       LocalScale: [1, 1, 1]
     SceneCameraComponent:
-      Aspect: 1.6
+      Aspect: 1.7738589
       Fov: 1.0471976
       Near: 0.1
       Far: 100

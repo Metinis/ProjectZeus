@@ -1,11 +1,20 @@
 Assets: Default
 Meshes:
-  - Mesh: 6878130063348520325
-    Name: part4_part4_0
-    Path: /assets/meshes/6878130063348520325.bin
-  - Mesh: 3546871286146299310
-    Name: part3_part3_0
-    Path: /assets/meshes/3546871286146299310.bin
+  - Mesh: 3
+    Name: Sphere
+    Path: /assets/meshes/3.bin
+  - Mesh: 7
+    Name: Skybox
+    Path: /assets/meshes/7.bin
+  - Mesh: 7842940629723490063
+    Name: part2_part2_0
+    Path: /assets/meshes/7842940629723490063.bin
+  - Mesh: 14785566747809854311
+    Name: part9_part9_0
+    Path: /assets/meshes/14785566747809854311.bin
+  - Mesh: 4606425493312033562
+    Name: part5_part5_0
+    Path: /assets/meshes/4606425493312033562.bin
   - Mesh: 18228867795812111109
     Name: defaultMaterial
     Path: /assets/meshes/18228867795812111109.bin
@@ -27,68 +36,51 @@ Meshes:
   - Mesh: 10780751587879222726
     Name: part10_part10_0
     Path: /assets/meshes/10780751587879222726.bin
-  - Mesh: 7842940629723490063
-    Name: part2_part2_0
-    Path: /assets/meshes/7842940629723490063.bin
-  - Mesh: 4606425493312033562
-    Name: part5_part5_0
-    Path: /assets/meshes/4606425493312033562.bin
-  - Mesh: 14785566747809854311
-    Name: part9_part9_0
-    Path: /assets/meshes/14785566747809854311.bin
-  - Mesh: 3
-    Name: Sphere
-    Path: /assets/meshes/3.bin
-  - Mesh: 7
-    Name: Skybox
-    Path: /assets/meshes/7.bin
   - Mesh: 2
     Name: Quad
     Path: /assets/meshes/2.bin
+  - Mesh: 3546871286146299310
+    Name: part3_part3_0
+    Path: /assets/meshes/3546871286146299310.bin
+  - Mesh: 6878130063348520325
+    Name: part4_part4_0
+    Path: /assets/meshes/6878130063348520325.bin
   - Mesh: 1
     Name: Cube
     Path: /assets/meshes/1.bin
 Textures:
-  - Texture: 8298532141874392783
+  - Texture: 3192581640756568707
     Name: ""
-    Path: /assets/textures/8298532141874392783.bin
+    Path: /assets/textures/3192581640756568707.bin
     Type: Texture2DAssimp
     Mip: false
-    Size: 987753
+    Size: 846135
     AbsPath: false
-    Dimensions: [987753, 0]
-  - Texture: 15447657610073996718
+    Dimensions: [846135, 0]
+  - Texture: 1893717612631239312
     Name: ""
-    Path: /assets/textures/15447657610073996718.bin
+    Path: /assets/textures/1893717612631239312.bin
     Type: Texture2DAssimp
     Mip: false
-    Size: 858304
+    Size: 780414
     AbsPath: false
-    Dimensions: [858304, 0]
-  - Texture: 14219241753645325649
-    Name: ""
-    Path: /assets/textures/14219241753645325649.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 893999
+    Dimensions: [780414, 0]
+  - Texture: 4335635466739443974
+    Name: Skybox
+    Path: ""
+    Type: CubemapHDR
+    Mip: true
+    Size: 0
     AbsPath: false
-    Dimensions: [893999, 0]
-  - Texture: 14161841791603595403
-    Name: HDRTex
-    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
-    Type: HDR
+    Dimensions: [1024, 1024]
+  - Texture: 1706802151729010460
+    Name: Convuluted Map
+    Path: ""
+    Type: CubemapHDR
     Mip: false
     Size: 0
     AbsPath: false
-    Dimensions: [0, 0]
-  - Texture: 12954764432786496274
-    Name: ""
-    Path: /assets/textures/12954764432786496274.bin
-    Type: Texture2DAssimp
-    Mip: false
-    Size: 1543885
-    AbsPath: false
-    Dimensions: [1543885, 0]
+    Dimensions: [32, 32]
   - Texture: 5073558421277115520
     Name: ""
     Path: /assets/textures/5073558421277115520.bin
@@ -169,38 +161,46 @@ Textures:
     Size: 961989
     AbsPath: false
     Dimensions: [961989, 0]
-  - Texture: 4335635466739443974
-    Name: Skybox
-    Path: ""
-    Type: CubemapHDR
-    Mip: true
-    Size: 0
-    AbsPath: false
-    Dimensions: [1024, 1024]
-  - Texture: 1706802151729010460
-    Name: Convuluted Map
-    Path: ""
-    Type: CubemapHDR
+  - Texture: 14161841791603595403
+    Name: HDRTex
+    Path: /env-maps/HDR_029_Sky_Cloudy_Ref.hdr
+    Type: HDR
     Mip: false
     Size: 0
     AbsPath: false
-    Dimensions: [32, 32]
-  - Texture: 3192581640756568707
+    Dimensions: [0, 0]
+  - Texture: 12954764432786496274
     Name: ""
-    Path: /assets/textures/3192581640756568707.bin
+    Path: /assets/textures/12954764432786496274.bin
     Type: Texture2DAssimp
     Mip: false
-    Size: 846135
+    Size: 1543885
     AbsPath: false
-    Dimensions: [846135, 0]
-  - Texture: 1893717612631239312
+    Dimensions: [1543885, 0]
+  - Texture: 14219241753645325649
     Name: ""
-    Path: /assets/textures/1893717612631239312.bin
+    Path: /assets/textures/14219241753645325649.bin
     Type: Texture2DAssimp
     Mip: false
-    Size: 780414
+    Size: 893999
     AbsPath: false
-    Dimensions: [780414, 0]
+    Dimensions: [893999, 0]
+  - Texture: 15447657610073996718
+    Name: ""
+    Path: /assets/textures/15447657610073996718.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 858304
+    AbsPath: false
+    Dimensions: [858304, 0]
+  - Texture: 8298532141874392783
+    Name: ""
+    Path: /assets/textures/8298532141874392783.bin
+    Type: Texture2DAssimp
+    Mip: false
+    Size: 987753
+    AbsPath: false
+    Dimensions: [987753, 0]
   - Texture: 6
     Name: Default
     Path: ""
@@ -210,36 +210,31 @@ Textures:
     AbsPath: false
     Dimensions: [0, 0]
 Shaders:
-  - Shader: 326274957222802488
+  - Shader: 6900930923653345749
     Name: ""
-    VertPath: /shaders/irradiance-con.vert
-    FragPath: /shaders/irradiance-con.frag
-    GeoPath: ""
-  - Shader: 13804908399076716620
-    Name: ""
-    VertPath: /shaders/prefilter.vert
-    FragPath: /shaders/prefilter.frag
+    VertPath: /shaders/eq-to-cubemap.vert
+    FragPath: /shaders/eq-to-cubemap.frag
     GeoPath: ""
   - Shader: 952348976798506850
     Name: ""
     VertPath: /shaders/brdf-con.vert
     FragPath: /shaders/brdf-con.frag
     GeoPath: ""
-  - Shader: 6900930923653345749
+  - Shader: 13804908399076716620
     Name: ""
-    VertPath: /shaders/eq-to-cubemap.vert
-    FragPath: /shaders/eq-to-cubemap.frag
-    GeoPath: ""
-  - Shader: 9183411380170158844
-    Name: ""
-    VertPath: /shaders/glskyboxHDR.vert
-    FragPath: /shaders/glskyboxHDR.frag
+    VertPath: /shaders/prefilter.vert
+    FragPath: /shaders/prefilter.frag
     GeoPath: ""
   - Shader: 9
     Name: NormalsShader
     VertPath: /shaders/normal-visual.vert
     FragPath: /shaders/normal-visual.frag
     GeoPath: /shaders/normal-visual.geom
+  - Shader: 9183411380170158844
+    Name: ""
+    VertPath: /shaders/glskyboxHDR.vert
+    FragPath: /shaders/glskyboxHDR.frag
+    GeoPath: ""
   - Shader: 10
     Name: PickingShader
     VertPath: /shaders/pickingShader.vert
@@ -254,6 +249,11 @@ Shaders:
     Name: Default
     VertPath: /shaders/pbr.vert
     FragPath: /shaders/pbr.frag
+    GeoPath: ""
+  - Shader: 326274957222802488
+    Name: ""
+    VertPath: /shaders/irradiance-con.vert
+    FragPath: /shaders/irradiance-con.frag
     GeoPath: ""
 Materials:
   - Material: 17339484055162925350
@@ -345,7 +345,7 @@ Materials:
     UseMetallic: true
     UseRoughness: true
     UseNormal: true
-    UseAO: false
+    UseAO: true
   - Material: 13512432072775061657
     Name: PrefilterMat
     Shader: 13804908399076716620
@@ -454,46 +454,10 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 8690061525642477703
-    Name: part7
+  - Material: 6228986560325982340
+    Name: part4
     Shader: 5
-    Texture: 17649817984729789870
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 939636595745073567
-    Name: part8
-    Shader: 5
-    Texture: 1893717612631239312
-    MetallicTexture: 0
-    RoughnessTexture: 0
-    NormalTexture: 0
-    AoTexture: 0
-    Albedo: [1, 1, 1]
-    Metallic: 1
-    Roughness: 1
-    AO: 1
-    Metal: false
-    UseAlbedo: true
-    UseMetallic: false
-    UseRoughness: false
-    UseNormal: false
-    UseAO: false
-  - Material: 12826605344784635879
-    Name: part3
-    Shader: 5
-    Texture: 18152021846763392122
+    Texture: 4006975348335320575
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
@@ -544,6 +508,42 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
+  - Material: 939636595745073567
+    Name: part8
+    Shader: 5
+    Texture: 1893717612631239312
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
+  - Material: 12826605344784635879
+    Name: part3
+    Shader: 5
+    Texture: 18152021846763392122
+    MetallicTexture: 0
+    RoughnessTexture: 0
+    NormalTexture: 0
+    AoTexture: 0
+    Albedo: [1, 1, 1]
+    Metallic: 1
+    Roughness: 1
+    AO: 1
+    Metal: false
+    UseAlbedo: true
+    UseMetallic: false
+    UseRoughness: false
+    UseNormal: false
+    UseAO: false
   - Material: 17323168578242373150
     Name: ConMat
     Shader: 326274957222802488
@@ -562,10 +562,10 @@ Materials:
     UseRoughness: false
     UseNormal: false
     UseAO: false
-  - Material: 6228986560325982340
-    Name: part4
+  - Material: 8690061525642477703
+    Name: part7
     Shader: 5
-    Texture: 4006975348335320575
+    Texture: 17649817984729789870
     MetallicTexture: 0
     RoughnessTexture: 0
     NormalTexture: 0
