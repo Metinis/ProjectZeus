@@ -7,3 +7,6 @@
 [submodule "ZeusEditor"]
 	path = ZeusEditor
 	url = https://github.com/Metinis/ZeusEditor.git
+[submodule "ZeusBox"]
+	path = ZeusBox
+	url = https://github.com/Metinis/ZeusBox
