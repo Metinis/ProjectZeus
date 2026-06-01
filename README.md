@@ -1,12 +1,12 @@
 ## Welcome to Zeus!
 
-This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using EnTT with ECS-based scripting.
+This is a WIP game engine project in Vulkan and C++ using EnTT with ECS-based scripting.
 ![Screenshot](/Screenshot2.png)
 
 ![Screenshot](/Screenshot1.png)
 
 ## Features
-
+- Vulkan Renderer
 - ENTT ECS integration
 - Lighting
 - An editor
@@ -27,10 +27,9 @@ This is a WIP game engine project in OpenGL (Vulkan coming soon) and C++ using E
 
 ## Features to add
 
-- Vulkan Support
 - Compute Ray Tracing
-- Collider manipulation
-- Collision callbacks
+- Extra Renderer Features
+- C# Scripting
 - And More..
 
 ## Building
